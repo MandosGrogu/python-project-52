@@ -24,6 +24,10 @@ cd python-project-52
 
 <!-- Добавьте примеры запуска и запись asciinema — именно это смотрит работодатель -->
 
+## Демо
+
+Приложение доступно по ссылке https://python-project-52-9q5d.onrender.com
+
 ---
 
 <details>
