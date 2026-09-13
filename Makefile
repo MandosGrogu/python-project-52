@@ -4,7 +4,7 @@ install:
 	uv venv
 
 build:
-    ./build.sh
+	./build.sh
 
 setup: install collectstatic migrate
 
