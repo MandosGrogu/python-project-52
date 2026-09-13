@@ -9,7 +9,7 @@ build:
 setup: install collectstatic migrate
 
 render-start:
-    gunicorn task_manager.wsgi
+	gunicorn task_manager.wsgi
 
 sync:
 	uv sync
