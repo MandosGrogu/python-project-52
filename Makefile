@@ -1,6 +1,7 @@
 install:
 	pip install uv
 	pip install gunicorn uvicorn
+	pip install django
 
 build:
 	./build.sh
