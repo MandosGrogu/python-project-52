@@ -1,0 +1,2267 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-14 11:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: bugsink/myenv/lib/python3.12/site-packages/admin_auto_filters/templates/django-admin-autocomplete-filter/autocomplete-filter.html:3
+#, python-format
+msgid " By %(filter_title)s "
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/bsmain/templates/bsmain/auth_token_list.html:5
+#: bugsink/myenv/lib/python3.12/site-packages/bsmain/templates/bsmain/auth_token_list.html:23
+#: bugsink/myenv/lib/python3.12/site-packages/bsmain/templates/bsmain/auth_token_list.html:41
+msgid "Auth Tokens"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/bsmain/templates/bsmain/auth_token_list.html:28
+msgid "Add Token"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/bsmain/templates/bsmain/auth_token_list.html:58
+msgid "Reveal"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/bsmain/templates/bsmain/auth_token_list.html:59
+msgid "Hide"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/bsmain/templates/bsmain/auth_token_list.html:65
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/user_edit.html:6
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/user_edit.html:18
+msgid "Edit"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/bsmain/templates/bsmain/auth_token_list.html:67
+msgid "Add description"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/bsmain/templates/bsmain/auth_token_list.html:72
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_edit.html:62
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_member_settings.html:41
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_new.html:27
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_edit.html:29
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_member_settings.html:41
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_new.html:24
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/preferences.html:34
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/user_edit.html:27
+msgid "Save"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/bsmain/templates/bsmain/auth_token_list.html:73
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:22
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_edit.html:21
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_edit.html:63
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_member_settings.html:43
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_member_settings.html:45
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members_invite.html:54
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_new.html:28
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_edit.html:30
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_member_settings.html:43
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_member_settings.html:45
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_members_invite.html:56
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_new.html:25
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/change_password.html:34
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/user_edit.html:28
+msgid "Cancel"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/bsmain/templates/bsmain/auth_token_list.html:79
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/formsets.py:499
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:23
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:170
+msgid "Delete"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/bsmain/templates/bsmain/auth_token_list.html:88
+msgid "No Auth Tokens."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/bsmain/views.py:23
+msgid "Token deleted"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/bsmain/views.py:31
+msgid "Description updated"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/contrib/messages/apps.py:16
+msgid "Messages"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/contrib/sitemaps/apps.py:8
+msgid "Site Maps"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/contrib/staticfiles/apps.py:9
+msgid "Static Files"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/contrib/syndication/apps.py:7
+msgid "Syndication"
+msgstr ""
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/paginator.py:30
+msgid "…"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/paginator.py:32
+msgid "That page number is not an integer"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/paginator.py:33
+msgid "That page number is less than 1"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/paginator.py:34
+msgid "That page contains no results"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:22
+msgid "Enter a valid value."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:70
+msgid "Enter a valid domain name."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:153
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:774
+msgid "Enter a valid URL."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:200
+msgid "Enter a valid integer."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:211
+msgid "Enter a valid email address."
+msgstr ""
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:289
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:297
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:309
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:318
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:332
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2220
+#, python-format
+msgid "Enter a valid %(protocol)s address."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:311
+msgid "IPv4"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:320
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/ipv6.py:43
+msgid "IPv6"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:334
+msgid "IPv4 or IPv6"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:375
+msgid "Enter only digits separated by commas."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:381
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:416
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:425
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:434
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:441
+#, python-format
+msgid ""
+"Ensure this value is a multiple of step size %(limit_value)s, starting from "
+"%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:473
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:491
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:514
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:365
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:404
+msgid "Enter a number."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:516
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:521
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:526
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:597
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/core/validators.py:659
+msgid "Null characters are not allowed."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/base.py:1600
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/models.py:908
+msgid "and"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/base.py:1602
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/constraints.py:22
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:134
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:135
+msgid "This field cannot be null."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:136
+msgid "This field cannot be blank."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:137
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr ""
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:141
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:180
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1162
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1163
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1165
+msgid "Boolean (Either True or False)"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1215
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1217
+msgid "String (unlimited)"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1326
+msgid "Comma-separated integers"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1427
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1431
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1566
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1435
+msgid "Date (without time)"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1562
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1570
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1575
+msgid "Date (with time)"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1702
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1704
+msgid "Decimal number"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1864
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
+"uuuuuu] format."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1868
+msgid "Duration"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1920
+msgid "Email address"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:1945
+msgid "File path"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2023
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2025
+msgid "Floating point number"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2065
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2067
+msgid "Integer"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2163
+msgid "Big (8 byte) integer"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2180
+msgid "Small integer"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2188
+msgid "IPv4 address"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2219
+msgid "IP address"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2310
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2311
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2313
+msgid "Boolean (Either True, False or None)"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2364
+msgid "Positive big integer"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2379
+msgid "Positive integer"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2394
+msgid "Positive small integer"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2410
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2446
+msgid "Text"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2526
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2530
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2534
+msgid "Time"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2642
+msgid "URL"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2666
+msgid "Raw binary data"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2731
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/__init__.py:2733
+msgid "Universally unique identifier"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/files.py:244
+msgid "File"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/files.py:420
+msgid "Image"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/json.py:24
+msgid "A JSON object"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/json.py:26
+msgid "Value must be valid JSON."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/related.py:979
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r is not a valid choice."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/related.py:982
+msgid "Foreign Key (type determined by related field)"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/related.py:1276
+msgid "One-to-one relationship"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/related.py:1333
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/related.py:1335
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/db/models/fields/related.py:1383
+msgid "Many-to-many relationship"
+msgstr ""
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the label
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/boundfield.py:185
+msgid ":?.!"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:94
+msgid "This field is required."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:314
+msgid "Enter a whole number."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:485
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:1257
+msgid "Enter a valid date."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:508
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:1258
+msgid "Enter a valid time."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:535
+msgid "Enter a valid date/time."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:569
+msgid "Enter a valid duration."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:570
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:639
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:640
+msgid "No file was submitted."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:641
+msgid "The submitted file is empty."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:643
+#, python-format
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:648
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:716
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:879
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:965
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/models.py:1592
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:967
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:1086
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/models.py:1590
+msgid "Enter a list of values."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:1087
+msgid "Enter a complete value."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:1329
+msgid "Enter a valid UUID."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/fields.py:1359
+msgid "Enter a valid JSON."
+msgstr ""
+
+#. Translators: This is the default suffix added to form field labels
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/forms.py:97
+msgid ":"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/forms.py:239
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/formsets.py:61
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/formsets.py:65
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/formsets.py:70
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/formsets.py:484
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/formsets.py:491
+msgid "Order"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/models.py:901
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/models.py:906
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/models.py:913
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/models.py:922
+msgid "Please correct the duplicate values below."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/models.py:1359
+msgid "The inline value did not match the parent instance."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/models.py:1450
+msgid "Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/models.py:1594
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/utils.py:229
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/widgets.py:527
+msgid "Clear"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/widgets.py:528
+msgid "Currently"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/widgets.py:529
+msgid "Change"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/widgets.py:866
+msgid "Unknown"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/widgets.py:867
+#: bugsink/myenv/lib/python3.12/site-packages/users/forms.py:16
+msgid "Yes"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/forms/widgets.py:868
+#: bugsink/myenv/lib/python3.12/site-packages/users/forms.py:17
+msgid "No"
+msgstr ""
+
+#. Translators: Please do not add spaces around commas.
+#: bugsink/myenv/lib/python3.12/site-packages/django/template/defaultfilters.py:873
+msgid "yes,no,maybe"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/template/defaultfilters.py:903
+#: bugsink/myenv/lib/python3.12/site-packages/django/template/defaultfilters.py:920
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/template/defaultfilters.py:922
+#, python-format
+msgid "%s KB"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/template/defaultfilters.py:924
+#, python-format
+msgid "%s MB"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/template/defaultfilters.py:926
+#, python-format
+msgid "%s GB"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/template/defaultfilters.py:928
+#, python-format
+msgid "%s TB"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/template/defaultfilters.py:930
+#, python-format
+msgid "%s PB"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dateformat.py:74
+msgid "p.m."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dateformat.py:75
+msgid "a.m."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dateformat.py:80
+msgid "PM"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dateformat.py:81
+msgid "AM"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dateformat.py:153
+msgid "midnight"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dateformat.py:155
+msgid "noon"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:7
+msgid "Monday"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:8
+msgid "Tuesday"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:9
+msgid "Wednesday"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:10
+msgid "Thursday"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:11
+msgid "Friday"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:12
+msgid "Saturday"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:13
+msgid "Sunday"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:16
+msgid "Mon"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:17
+msgid "Tue"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:18
+msgid "Wed"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:19
+msgid "Thu"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:20
+msgid "Fri"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:21
+msgid "Sat"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:22
+msgid "Sun"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:25
+msgid "January"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:26
+msgid "February"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:27
+msgid "March"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:28
+msgid "April"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:29
+msgid "May"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:30
+msgid "June"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:31
+msgid "July"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:32
+msgid "August"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:33
+msgid "September"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:34
+msgid "October"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:35
+msgid "November"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:36
+msgid "December"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:39
+msgid "jan"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:40
+msgid "feb"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:41
+msgid "mar"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:42
+msgid "apr"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:43
+msgid "may"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:44
+msgid "jun"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:45
+msgid "jul"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:46
+msgid "aug"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:47
+msgid "sep"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:48
+msgid "oct"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:49
+msgid "nov"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:50
+msgid "dec"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:55
+msgctxt "abbrev. month"
+msgid "March"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:56
+msgctxt "abbrev. month"
+msgid "April"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:57
+msgctxt "abbrev. month"
+msgid "May"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:58
+msgctxt "abbrev. month"
+msgid "June"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:59
+msgctxt "abbrev. month"
+msgid "July"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:67
+msgctxt "alt. month"
+msgid "January"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:68
+msgctxt "alt. month"
+msgid "February"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:69
+msgctxt "alt. month"
+msgid "March"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:70
+msgctxt "alt. month"
+msgid "April"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:71
+msgctxt "alt. month"
+msgid "May"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:72
+msgctxt "alt. month"
+msgid "June"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:73
+msgctxt "alt. month"
+msgid "July"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:74
+msgctxt "alt. month"
+msgid "August"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:75
+msgctxt "alt. month"
+msgid "September"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:76
+msgctxt "alt. month"
+msgid "October"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:77
+msgctxt "alt. month"
+msgid "November"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/dates.py:78
+msgctxt "alt. month"
+msgid "December"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/ipv6.py:20
+msgid "This is not a valid IPv6 address."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/text.py:76
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/text.py:282
+msgid "or"
+msgstr ""
+
+#. Translators: This string is used as a separator between list elements
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/text.py:301
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/timesince.py:135
+msgid ", "
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/timesince.py:8
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/timesince.py:9
+#, python-format
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/timesince.py:10
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/timesince.py:11
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/timesince.py:12
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/utils/timesince.py:13
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/csrf.py:29
+msgid "Forbidden"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/csrf.py:30
+msgid "CSRF verification failed. Request aborted."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/csrf.py:34
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/csrf.py:40
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/csrf.py:45
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/csrf.py:54
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/csrf.py:60
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/csrf.py:66
+msgid "More information is available with DEBUG=True."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/generic/dates.py:44
+msgid "No year specified"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/generic/dates.py:64
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/generic/dates.py:115
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/generic/dates.py:214
+msgid "Date out of range"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/generic/dates.py:94
+msgid "No month specified"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/generic/dates.py:147
+msgid "No day specified"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/generic/dates.py:194
+msgid "No week specified"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/generic/dates.py:353
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/generic/dates.py:384
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/generic/dates.py:680
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/generic/dates.py:720
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/generic/detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/generic/list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/generic/list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/generic/list.py:173
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/static.py:49
+msgid "Directory indexes are not allowed here."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/static.py:51
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/static.py:68
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/templates/directory_index.html:8
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/templates/directory_index.html:11
+#, python-format
+msgid "Index of %(directory)s"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:7
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:204
+msgid "The install worked successfully! Congratulations!"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:208
+#, python-format
+msgid ""
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:217
+msgid "Django Documentation"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:218
+msgid "Topics, references, &amp; how-to’s"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:226
+msgid "Tutorial: A Polling App"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:227
+msgid "Get started with Django"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:235
+msgid "Django Community"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/django/views/templates/default_urlconf.html:236
+msgid "Connect, get help, or contribute"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/drf_spectacular/openapi.py:1446
+#: bugsink/myenv/lib/python3.12/site-packages/drf_spectacular/openapi.py:1499
+#: bugsink/myenv/lib/python3.12/site-packages/drf_spectacular/openapi.py:1503
+#: bugsink/myenv/lib/python3.12/site-packages/drf_spectacular/openapi.py:1507
+msgid "No response body"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/drf_spectacular/openapi.py:1471
+#: bugsink/myenv/lib/python3.12/site-packages/drf_spectacular/openapi.py:1525
+msgid "Unspecified response body"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/drf_spectacular/plumbing.py:496
+#, python-format
+msgid "Token-based authentication with required prefix \"%s\""
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/drf_spectacular/views.py:45
+msgid ""
+"\n"
+"    OpenApi3 schema for this API. Format can be selected via content "
+"negotiation.\n"
+"\n"
+"    - YAML: application/vnd.oai.openapi\n"
+"    - JSON: application/vnd.oai.openapi+json\n"
+"    "
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/models.py:734
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:197
+msgid "First seen"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/models.py:735
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:161
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:55
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:61
+msgid "Resolved"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/models.py:736
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:168
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:54
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:60
+msgid "Muted"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/models.py:737
+msgid "Marked as regressed"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/models.py:738
+msgid "Unmuted"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/models.py:739
+msgid "Reopened"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/models.py:741
+msgid "Release info added"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/models.py:744
+msgid "Manual annotation"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/_event_nav.html:5
+msgid "search..."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:27
+msgid "Reopen"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:33
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:48
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:105
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:110
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:118
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:132
+msgid "Resolve"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:40
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:125
+msgid "Resolved in next release"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:56
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:58
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:140
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:142
+msgid "Mute"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:63
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:71
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:147
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:155
+msgid "Mute for/until&nbsp;&nbsp;"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:80
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:82
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:161
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:163
+msgid "Unmute"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:108
+msgid "Stacktrace"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:109
+msgid "Event&nbsp;Details"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:110
+msgid "Breadcrumbs"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:111
+msgid "Event&nbsp;List"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:112
+msgid "Tags"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:113
+msgid "Grouping"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:114
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/history.html:8
+#: bugsink/myenv/lib/python3.12/site-packages/templates/admin/change_form_object_tools.html:5
+msgid "History"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:123
+#, python-format
+msgid ""
+"Event %(digest_order)s of %(total_events)s which occured at <span "
+"class=\"font-bold\">%(ingested_at)s</span>"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:126
+#: bugsink/myenv/lib/python3.12/site-packages/templates/admin/change_form_object_tools.html:8
+msgid "Download"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:127
+msgid "JSON"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:128
+msgid "Markdown"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:133
+msgid "Event Admin"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:135
+msgid "Issue Admin"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:153
+msgid "Issue"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:158
+msgid "State"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:163
+msgid "in"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:179
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:52
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:58
+msgid "Open"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:186
+msgid "Nr. of events"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:202
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:68
+msgid "Last seen"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:207
+msgid "Seen at"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:235
+msgid "Issue Tags"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/base.html:250
+msgid "All tags..."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/breadcrumbs.html:25
+msgid "No breadcrumbs available for this event."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/history.html:9
+msgid "Most recent first"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/history.html:21
+msgid "Add comment as manual annotation"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/history.html:26
+msgid "Now"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/history.html:35
+msgid "comments..."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/history.html:36
+msgid "Post comment"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/history.html:59
+msgctxt "History"
+msgid "by"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:7
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:40
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:264
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:269
+#: bugsink/myenv/lib/python3.12/site-packages/theme/templates/base.html:94
+#: bugsink/myenv/lib/python3.12/site-packages/theme/templates/base.html:97
+msgid "Issues"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:15
+msgid "Delete Issues"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:18
+msgid ""
+"Deleting an Issue is a permanent action and cannot be undone. It's typically "
+"better to resolve or mute an issue instead of deleting it, as this allows "
+"you to keep track of past issues and their resolutions."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:45
+msgid ""
+"The chosen action is not applicable to all selected issues. Issues for which "
+"it has not been applied have been left with checkboxes checked so that you "
+"can try again with another action."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:53
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:59
+msgid "Unresolved"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:56
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:62
+msgid "All"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:67
+msgid "Sort issues"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:69
+msgid "Most events"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:74
+msgid "Search issues..."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:203
+#, python-format
+msgid "with <b>%(event_count)s</b> events"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:229
+msgid "Congratulations! You have no open issues."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:234
+#, python-format
+msgid "No %(state_filter)s issues found."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/stacktrace.html:25
+msgid "No stacktrace available for this event."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/tags.html:31
+msgid "No tags found for this issue."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/forms.py:21
+#: bugsink/myenv/lib/python3.12/site-packages/teams/forms.py:13
+#: bugsink/myenv/lib/python3.12/site-packages/users/forms.py:86
+msgid "Email"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/forms.py:23
+#: bugsink/myenv/lib/python3.12/site-packages/projects/models.py:229
+#: bugsink/myenv/lib/python3.12/site-packages/teams/forms.py:15
+#: bugsink/myenv/lib/python3.12/site-packages/teams/models.py:54
+msgid "Role"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/forms.py:69
+#, python-format
+msgid "Default (%s, as per %s settings)"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/forms.py:92
+msgid "The maximum number of events to store before evicting."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/forms.py:112
+msgid "Slug (read-only)"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/forms.py:116
+msgid "DSN (read-only)"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/forms.py:120
+#, python-brace-format
+msgid "Use the DSN to {link}."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/forms.py:121
+msgid "set up the SDK"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/forms.py:133
+#, python-format
+msgid "%(name)s -- previous, transitioning until %(date)s"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/forms.py:148
+msgid "You don't have any teams yet; "
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/forms.py:149
+msgid "Create a team first."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/forms.py:180
+msgid "A project with this name already exists in this team."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/models.py:55
+#: bugsink/myenv/lib/python3.12/site-packages/teams/models.py:10
+msgid "Member"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/models.py:56
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_list.html:99
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members.html:53
+#: bugsink/myenv/lib/python3.12/site-packages/teams/models.py:11
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_list.html:70
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_members.html:53
+#: bugsink/myenv/lib/python3.12/site-packages/theme/templates/base.html:102
+msgid "Admin"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/models.py:61
+#: bugsink/myenv/lib/python3.12/site-packages/teams/models.py:16
+msgid "Joinable"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/models.py:65
+#: bugsink/myenv/lib/python3.12/site-packages/teams/models.py:21
+msgid "Discoverable"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/models.py:69
+msgid "Team Members"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/models.py:84
+msgctxt "Project"
+msgid "Name"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/models.py:118
+#: bugsink/myenv/lib/python3.12/site-packages/teams/models.py:33
+msgid "Visibility"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/models.py:119
+msgid "Which users can see this project and its issues?"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/models.py:127
+msgid "Retention max event count"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/models.py:227
+#: bugsink/myenv/lib/python3.12/site-packages/teams/models.py:53
+#: bugsink/myenv/lib/python3.12/site-packages/users/forms.py:138
+msgid "Send email alerts"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_alerts_setup.html:5
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_alerts_setup.html:25
+msgid "Alerts"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_alerts_setup.html:28
+msgid "Add"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_alerts_setup.html:40
+msgid "Messaging Services"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_alerts_setup.html:68
+msgctxt "Alerts"
+msgid "Test"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_alerts_setup.html:69
+msgctxt "Alerts"
+msgid "Remove"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_alerts_setup.html:78
+msgid "No Messaging Services Configured."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_alerts_setup.html:78
+msgid "Add Messaging Service"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_alerts_setup.html:92
+msgctxt "Alerts"
+msgid "Settings"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_alerts_setup.html:93
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members.html:98
+msgid "Back to Projects"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_edit.html:6
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_edit.html:38
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_edit.html:6
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_edit.html:18
+#: bugsink/myenv/lib/python3.12/site-packages/templates/bugsink/settings.html:7
+msgid "Settings"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_edit.html:14
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_edit.html:64
+msgid "Delete Project"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_edit.html:17
+msgid ""
+"Are you sure you want to delete this project? This action cannot be undone "
+"and will delete all associated data."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_edit.html:42
+#, python-format
+msgid "Project settings for \"%(project_name)s\"."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_list.html:5
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_list.html:14
+#: bugsink/myenv/lib/python3.12/site-packages/theme/templates/base.html:92
+msgid "Projects"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_list.html:21
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_new.html:6
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_new.html:18
+msgid "New Project"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_list.html:42
+msgid "My Projects"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_list.html:44
+msgid "Team Projects"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_list.html:45
+msgid "Other Projects"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_list.html:77
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_list.html:58
+msgid "members"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_list.html:79
+msgid "open issues"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_list.html:81
+msgid "many issues"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_list.html:84
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_list.html:60
+msgid "my settings"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_list.html:97
+msgid "You're&nbsp;invited!"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_list.html:167
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members_accept.html:5
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members_accept.html:18
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_list.html:105
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_members_accept.html:5
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_members_accept.html:18
+msgid "Invitation"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_list.html:171
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members.html:70
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_list.html:109
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_members.html:70
+msgid "Leave"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_list.html:177
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_list.html:115
+msgid "Join"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_list.html:187
+msgid "No projects found."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_member_settings.html:6
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_member_settings.html:27
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_member_settings.html:6
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_member_settings.html:27
+msgid "Membership settings"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_member_settings.html:32
+#, python-format
+msgid "Your membership settings for project \"%(project_name)s\"."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_member_settings.html:34
+#, python-format
+msgid "Settings for project \"%(project_name)s\" and user %(username)s."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members.html:5
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members.html:27
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_members.html:5
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_members.html:27
+msgid "Members"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members.html:30
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members_invite.html:52
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_members.html:30
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_members_invite.html:54
+msgid "Invite Member"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members.html:51
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_members.html:51
+msgid "Invitation pending"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members.html:62
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_members.html:62
+msgid "Show invite link"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members.html:64
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members.html:66
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_members.html:64
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_members.html:66
+msgid "Reinvite"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members.html:72
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_members.html:72
+msgid "Remove"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members.html:83
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_members.html:83
+msgid "No members yet."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members.html:83
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_members.html:83
+msgid "Invite someone</a>."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members.html:97
+#, python-format
+msgid " %(team_name)s Members"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members_accept.html:22
+#, python-format
+msgid ""
+"You have been invited to join the project \"%(project_name)s\" in the role "
+"of \"%(role)s\". Please confirm by clicking the button below."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members_accept.html:25
+msgid "Accept"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members_accept.html:26
+msgid "Decline"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members_invite.html:6
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members_invite.html:28
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_members_invite.html:6
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_members_invite.html:30
+msgid "Invite members"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members_invite.html:32
+#, python-format
+msgid ""
+"Invite a member to join the project \"%(project_name)s\". They will receive "
+"an email with a link to join."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_members_invite.html:53
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_members_invite.html:55
+msgid "Invite and add another"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_messaging_service_edit.html:6
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_messaging_service_edit.html:26
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_messaging_service_new.html:6
+#: bugsink/myenv/lib/python3.12/site-packages/projects/templates/projects/project_messaging_service_new.html:26
+msgid "Messaging Service"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/projects/views.py:89
+#, python-format
+msgid "You have joined the project \"%s\""
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/teams/forms.py:51
+#, python-format
+msgid "User-default (%s)"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/teams/models.py:24
+msgid "Hidden"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/teams/models.py:30
+msgctxt "Team"
+msgid "Name"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/teams/models.py:35
+msgid "Which users can see this team and its issues?"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_edit.html:22
+#, python-format
+msgid "Team settings for \"%(team_name)s\"."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_list.html:5
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_list.html:14
+#: bugsink/myenv/lib/python3.12/site-packages/theme/templates/base.html:89
+msgid "Teams"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_list.html:21
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_new.html:18
+msgid "New Team"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_list.html:32
+msgid "My Teams"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_list.html:33
+msgid "Other Teams"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_list.html:57
+msgid "projects"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_list.html:125
+msgid "No teams found."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_member_settings.html:32
+#, python-format
+msgid "Your membership settings for team \"%(team_name)s\"."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_member_settings.html:34
+#, python-format
+msgid "Settings for team \"%(team_name)s\" and user %(username)s."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_members.html:97
+msgid "Back to Teams"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/teams/templates/teams/team_members_invite.html:34
+#, python-format
+msgid ""
+"Invite a member to join the team \"%(team_name)s\". They will receive an "
+"email with a link to join."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/teams/views.py:62
+#, python-format
+msgid "You have joined the team \"%s\""
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/templates/admin/change_form_object_tools.html:7
+msgid "Raw"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/templates/admin/change_form_object_tools.html:9
+msgid "View on site"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/templates/bugsink/login.html:25
+msgid ""
+"Your account doesn't have access to this page. To proceed, please login with "
+"an account that has access."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/templates/bugsink/login.html:27
+msgid "Please login to see this page."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/templates/bugsink/login.html:38
+#: bugsink/myenv/lib/python3.12/site-packages/theme/templates/base.html:111
+msgid "Login"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/templates/bugsink/login.html:43
+msgid "Forgot password?"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/templates/bugsink/login.html:44
+msgid "Create an account"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/templates/bugsink/settings.html:14
+msgid "Site Settings"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/theme/templates/base.html:106
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/user_list.html:45
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/user_list.html:63
+#: task_manager/templates/base.html:21
+msgid "Users"
+msgstr "Пользователи"
+
+#: bugsink/myenv/lib/python3.12/site-packages/theme/templates/base.html:107
+msgid "Tokens"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/theme/templates/base.html:113
+msgid "OpenAPI"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/theme/templates/base.html:114
+msgid "Preferences"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/theme/templates/base.html:118
+msgid "Log out"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/theme/templates/includes/copy_button_only.html:11
+msgid "Copy"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/theme/templates/includes/invite_link_notice.html:6
+msgid "Invitation not sent"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/theme/templates/includes/invite_link_notice.html:7
+#, python-format
+msgid ""
+"No invitation was sent because email is not set up. Hand out the following "
+"link to %(email)s yourself:"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/theme/templates/includes/invite_link_notice.html:9
+#, python-format
+msgid "Hand out the following link to %(email)s yourself:"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/users/forms.py:140
+msgid "Theme preference"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/users/models.py:10
+msgid "Auto (browser preference)"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/users/models.py:37
+msgid "System Default"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/users/models.py:38
+msgid "Light"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/users/models.py:39
+msgid "Dark"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/users/models.py:48
+msgid "Language"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/change_password.html:26
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/change_password.html:33
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/preferences.html:38
+msgid "Change password"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/confirm_email.html:18
+msgid "Confirm your email address by clicking the button below."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/confirm_email.html:23
+msgid "Confirm"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/confirm_email_sent.html:17
+msgid ""
+"A verification email has been sent to your email address. Please verify your "
+"email address to complete the registration process."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/logged_out.html:16
+msgid "You have been logged out."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/logged_out.html:16
+msgid "Log in again</a>."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/preferences.html:27
+msgid "User Preferences"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/request_reset_password.html:23
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/reset_password.html:27
+msgid "Reset password"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/request_reset_password.html:27
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/reset_password.html:32
+msgid "Log in instead"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/resend_confirmation.html:23
+msgid "Resend verification email"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/reset_password_email_sent.html:16
+msgid ""
+"A password reset link has been sent to your email address. Please check your "
+"inbox and follow the instructions to reset your password."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/user_edit.html:22
+#, python-format
+msgid "Settings for %(username)s."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/user_list.html:16
+msgid ""
+"Are you sure you want to delete this user? This action cannot be undone."
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/user_list.html:72
+msgid "Superuser"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/users/views.py:246
+msgid "Updated preferences"
+msgstr ""
+
+#: bugsink/myenv/lib/python3.12/site-packages/users/views.py:269
+msgid "Password updated"
+msgstr ""
+
+#: task_manager/templates/base.html:18
+msgid "Task Manager"
+msgstr "Менеджер задач"
+
+#: task_manager/templates/base.html:26
+msgid "Log in"
+msgstr "Вход"
+
+#: task_manager/templates/base.html:29
+msgid "Sign in"
+msgstr "Регистрация"
+
+#: task_manager/templates/index.html:6
+msgid "Greetings from Hexlet!"
+msgstr "Привет от Хекслет!"
+
+#: task_manager/templates/index.html:7
+msgid "Practical programming courses"
+msgstr "Практические курсы по программированию"
+
+#: task_manager/templates/index.html:9
+msgid "Learn more"
+msgstr "Узнать больше"

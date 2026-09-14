@@ -9,13 +9,36 @@ https://docs.djangoproject.com/en/6.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.1/ref/settings/
 """
+import os
 
+from django.utils.translation import gettext_lazy as _
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Язык по умолчанию — английский
+LANGUAGE_CODE = 'en'
+
+USE_I18N = True
+USE_TZ = True
+
+# Список поддерживаемых языков
+LANGUAGES = [
+    ('en', 'English'),
+    ('ru', 'Russian'),
+]
+
+# Путь, где Django будет искать файлы переводов (.po)
+LOCALE_PATHS = [
+    BASE_DIR / 'locale',
+]
+
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'assets',
+]
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.1/howto/deployment/checklist/
@@ -27,6 +50,8 @@ SECRET_KEY = 'django-insecure--8-br0^we2778o0=r%b%--m8@k9h^45+9jc^hbwc^tp-=ty=zm
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
     'python-project-52-9q5d.onrender.com',
 ]
 
@@ -40,12 +65,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_tailwind_cli',
     'task_manager',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -106,13 +133,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/6.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
-
-USE_I18N = True
-
-USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)

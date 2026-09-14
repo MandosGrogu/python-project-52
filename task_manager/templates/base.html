@@ -1,0 +1,74 @@
+{% load tailwind_cli %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="{{ request.LANGUAGE_CODE }}" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% tailwind_css %}
+  <title>Task manager</title>
+</head>
+<body class="flex flex-col min-h-full bg-white text-gray-900">
+  <header class="flex-shrink-0">
+    <nav class="bg-gray-50 text-black px-4 py-3 flex items-center justify-between">
+    {% block navbar %}
+        <div class="flex items-center justify-between w-full">
+        <ul class="flex space-x-4">
+            <li>
+                <a class="text-base font-bold hover:text-black whitespace-nowrap" href="/">{% translate "Task Manager" %}</a>
+            </li>
+            <li>
+                <a class="text-black hover:opacity-70 transition-colors" href="">{% translate "Users" %}</a>
+            </li>
+        </ul>
+        <ul class="flex space-x-4">
+            <li>
+            <a class="text-black hover:opacity-70 transition-colors" href="">{% translate "Log in" %}</a>
+            </li>  
+            <li>
+            <a class="text-black hover:opacity-70 transition-colors" href="">{% translate "Sign in" %}</a>
+            </li>  
+        </ul>    
+        </div>
+    {% endblock %}
+    </nav>
+  </header>
+
+  {% if messages %}
+    <div class="max-w-xl mx-auto mt-4 px-4 w-full space-y-2">
+      {% for category, message in messages %}
+        {# Базовая логика для разных категорий уведомлений (success, danger/error) #}
+        <div class="p-4 rounded-md border {% if category == 'success' %}bg-green-50 text-green-800 border-green-200{% elif category == 'danger' or category == 'error' %}bg-red-50 text-red-800 border-red-200{% else %}bg-blue-50 text-blue-800 border-blue-200{% endif %}" role="alert">
+          {{ message }}
+        </div> 
+      {% endfor %}
+    </div>
+  {% endif %}
+    {% block content %}{% endblock %}
+<div class="w-full mt-auto overflow-hidden">
+  <div class="mx-[11%] border-t border-gray-200"></div>
+  <footer class="mx-[11%] pt-2 pb-8">
+    <p class="text-black hover:underline transition-colors cursor-default">Hexlet</p>
+  </footer>
+</div>
+<div class="fixed bottom-4 right-4 z-50">
+    <form action="{% url 'set_language' %}" method="post" class="flex space-x-2 bg-white p-2 rounded-xl shadow-lg border border-gray-100">
+        {% csrf_token %}
+        <input name="next" type="hidden" value="{{ request.get_full_path }}">
+        
+        <!-- Кнопка EN -->
+        <button name="language" value="en" 
+                class="px-3 py-1.5 text-sm font-semibold rounded-lg border transition-colors {% if request.LANGUAGE_CODE == 'en' %}bg-blue-600 text-white border-blue-600 shadow-sm{% else %}bg-white text-gray-700 border-gray-200 hover:bg-gray-50{% endif %}">
+            EN
+        </button>
+        
+        <!-- Кнопка RU -->
+        <button name="language" value="ru" 
+                class="px-3 py-1.5 text-sm font-semibold rounded-lg border transition-colors {% if request.LANGUAGE_CODE == 'ru' %}bg-blue-600 text-white border-blue-600 shadow-sm{% else %}bg-white text-gray-700 border-gray-200 hover:bg-gray-50{% endif %}">
+            RU
+        </button>
+    </form>
+</div>
+
+</body>
+</html>

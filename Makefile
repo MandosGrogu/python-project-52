@@ -15,13 +15,16 @@ sync:
 	uv sync
 
 migrate:
-	python manage.py migrate
+	uv run manage.py migrate
+
+build-styles:
+	uv run manage.py tailwind build
 
 collectstatic:
-	python manage.py collectstatic --no-input
+	uv run manage.py collectstatic --no-input
 
 check:
 	uv run ruff check
 
 start:
-	python manage.py runserver
+	uv run manage.py runserver
