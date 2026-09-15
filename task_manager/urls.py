@@ -20,7 +20,9 @@ from django.urls import path, include
 from task_manager import views
 from .forms import StyledLoginForm
 from .views import CustomLoginView, CustomLogoutView
-from users import urls
+from users import urls as users_urls
+from statuses import urls as statuses_urls
+from statuses import views as statuses_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,8 +30,12 @@ urlpatterns = [
     path("", views.index, name='index'),
     path('login/', CustomLoginView.as_view(form_class=StyledLoginForm), name='login'),
     path('users/create/', views.signup_view, name='signup'),
-    path('users/', include(urls), name="users"),
+    path('users/', include(users_urls), name="users"),
     path('logout/', CustomLogoutView.as_view(), name='logout'),
     path('users/<int:pk>/delete/', views.delete_view, name='delete'),
-    path('users/<int:pk>/update/', views.update_view, name='update')
+    path('users/<int:pk>/update/', views.update_view, name='update'),
+    path('statuses/', include(statuses_urls), name='statuses'),
+    path('statuses/create/', statuses_views.status_create, name='status_create'),
+    path('statuses/<int:pk>/delete/', statuses_views.status_delete_view, name='status_delete'),
+    path('statuses/<int:pk>/update/', statuses_views.status_update_view, name='status_update'),
 ]
