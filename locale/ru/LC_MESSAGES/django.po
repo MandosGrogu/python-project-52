@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-14 11:39+0000\n"
+"POT-Creation-Date: 2026-09-14 18:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2242,16 +2242,51 @@ msgstr ""
 msgid "Password updated"
 msgstr ""
 
+#: task_manager/forms.py:8 task_manager/forms.py:34
+msgid "User Name:"
+msgstr "Имя пользователя:"
+
+#: task_manager/forms.py:14 task_manager/forms.py:41
+msgid "Password:"
+msgstr "Пароль:"
+
+#: task_manager/forms.py:22
+msgid "First name:"
+msgstr "Имя:"
+
+#: task_manager/forms.py:28
+msgid "Last name:"
+msgstr "Фамилия:"
+
+#: task_manager/forms.py:35
+msgid "Required field. Maximum 150 symbols. Only letters, numbers and symbols @/./+/-/_."
+msgstr "Обязательное поле. Не более 150 символов. Только буквы, цифры и символы @/./+/-/_."
+
+#: task_manager/forms.py:42
+msgid "Your password should contain at least 3 symbols."
+msgstr "Ваш пароль должен содержать как минимум 3 символа."
+
+#: task_manager/forms.py:48
+msgid "Confirm Password:"
+msgstr "Подтверждение пароля:"
+
+#: task_manager/forms.py:49
+msgid "To confirm password, please, enter your password one more time."
+msgstr "Для подтверждения введите, пожалуйста, пароль ещё раз."
+
 #: task_manager/templates/base.html:18
 msgid "Task Manager"
 msgstr "Менеджер задач"
 
 #: task_manager/templates/base.html:26
+msgctxt "navbar label"
 msgid "Log in"
 msgstr "Вход"
 
 #: task_manager/templates/base.html:29
-msgid "Sign in"
+#: task_manager/templates/registration/signup.html:5
+msgctxt "navbar label"
+msgid "Sign up"
 msgstr "Регистрация"
 
 #: task_manager/templates/index.html:6
@@ -2265,3 +2300,20 @@ msgstr "Практические курсы по программировани�
 #: task_manager/templates/index.html:9
 msgid "Learn more"
 msgstr "Узнать больше"
+
+#: task_manager/templates/registration/login.html:5
+#, fuzzy
+#| msgctxt "navbar label"
+#| msgid "Log in"
+msgid "Log in"
+msgstr "Вход"
+
+#: task_manager/templates/registration/login.html:9
+msgctxt "button label"
+msgid "Log in"
+msgstr "Войти"
+
+#: task_manager/templates/registration/signup.html:9
+msgctxt "button label"
+msgid "Sign up"
+msgstr "Зарегистрировать"

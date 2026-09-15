@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-14 11:39+0000\n"
+"POT-Creation-Date: 2026-09-14 18:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2103,8 +2103,8 @@ msgstr ""
 #: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/user_list.html:45
 #: bugsink/myenv/lib/python3.12/site-packages/users/templates/users/user_list.html:63
 #: task_manager/templates/base.html:21
-msgid "Пользователи"
-msgstr "Users"
+msgid "Users"
+msgstr ""
 
 #: bugsink/myenv/lib/python3.12/site-packages/theme/templates/base.html:107
 msgid "Tokens"
@@ -2240,23 +2240,65 @@ msgstr ""
 msgid "Password updated"
 msgstr ""
 
-#: task_manager/templates/base.html:18
+#: task_manager/forms.py:8 task_manager/forms.py:34
+msgid "Имя пользователя:"
+msgstr "User Name:"
+
+#: task_manager/forms.py:14 task_manager/forms.py:41
+msgid "Пароль:"
+msgstr "Password:"
+
+#: task_manager/forms.py:22
+msgid "Имя:"
+msgstr "First name:"
+
+#: task_manager/forms.py:28
+msgid "Фамилия:"
+msgstr "Last name:"
+
+#: task_manager/forms.py:35
+msgid "Обязательное поле. Не более 150 символов. Только буквы, цифры и символы @/./+/-/_."
+msgstr "Required field. Maximum 150 symbols. Only letters, numbers and symbols @/./+/-/_."
+
+#: task_manager/forms.py:42
+msgid "Ваш пароль должен содержать как минимум 3 символа."
+msgstr "Your password should contain at least 3 symbols."
+
+#: task_manager/forms.py:48
+msgid "Подтверждение пароля:"
+msgstr "Confirm Password:"
+
+#: task_manager/forms.py:49
+msgid "Для подтверждения введите, пожалуйста, пароль ещё раз."
+msgstr "To confirm password, please, enter your password one more time."
+
+msgid "Пользователи"
+msgstr "Users"
+
 msgid "Менеджер задач"
 msgstr "Task Manager"
 
-#: task_manager/templates/base.html:26
+msgctxt "navbar label"
 msgid "Вход"
 msgstr "Log in"
 
-#: task_manager/templates/base.html:29
+msgctxt "button label"
+msgid "Войти"
+msgstr "Log in"
+
+msgctxt "navbar label"
 msgid "Регистрация"
-msgstr "Sign in"
+msgstr "Sign up"
 
-#~ msgid "Привет от Хекслет!"
-#~ msgstr "Greetings from Hexlet!"
+msgctxt "button label"
+msgid "Зарегистрировать"
+msgstr "Sign up"
 
-#~ msgid "Практические курсы по программированию"
-#~ msgstr "Practical programming courses"
+msgid "Привет от Хекслет!"
+msgstr "Greetings from Hexlet!"
 
-#~ msgid "Узнать больше"
-#~ msgstr "Learn more"
+msgid "Практические курсы по программированию"
+msgstr "Practical programming courses"
+
+msgid "Узнать больше"
+msgstr "Learn more"

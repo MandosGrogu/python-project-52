@@ -12,10 +12,14 @@ https://docs.djangoproject.com/en/6.1/ref/settings/
 import os
 
 from django.utils.translation import gettext_lazy as _
+from django.contrib.messages import constants as messages
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+LOGIN_REDIRECT_URL = 'index'  # Redirect target after login
+LOGOUT_REDIRECT_URL = 'login'
 
 # Язык по умолчанию — английский
 LANGUAGE_CODE = 'en'
@@ -67,7 +71,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_tailwind_cli',
     'task_manager',
+    'users',
 ]
+
+MESSAGE_TAGS = {
+    messages.DEBUG: 'bg-gray-100 text-gray-800 border-gray-300',
+    messages.INFO: 'bg-blue-100 text-blue-800 border-blue-300',
+    messages.SUCCESS: 'bg-green-100 text-green-800 border-green-300',
+    messages.WARNING: 'bg-yellow-100 text-yellow-800 border-yellow-300',
+    messages.ERROR: 'bg-red-100 text-red-800 border-red-300',
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -150,3 +163,5 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+
+AUTH_USER_MODEL = 'users.CustomUser'

@@ -8,42 +8,70 @@
   {% tailwind_css %}
   <title>Task manager</title>
 </head>
-<body class="flex flex-col min-h-full bg-white text-gray-900">
-  <header class="flex-shrink-0">
-    <nav class="bg-gray-50 text-black px-4 py-3 flex items-center justify-between">
-    {% block navbar %}
-        <div class="flex items-center justify-between w-full">
-        <ul class="flex space-x-4">
-            <li>
-                <a class="text-base font-bold hover:text-black whitespace-nowrap" href="/">{% translate "Task Manager" %}</a>
-            </li>
-            <li>
-                <a class="text-black hover:opacity-70 transition-colors" href="">{% translate "Users" %}</a>
-            </li>
-        </ul>
-        <ul class="flex space-x-4">
-            <li>
-            <a class="text-black hover:opacity-70 transition-colors" href="">{% translate "Log in" %}</a>
-            </li>  
-            <li>
-            <a class="text-black hover:opacity-70 transition-colors" href="">{% translate "Sign in" %}</a>
-            </li>  
-        </ul>    
-        </div>
-    {% endblock %}
-    </nav>
-  </header>
-
-  {% if messages %}
-    <div class="max-w-xl mx-auto mt-4 px-4 w-full space-y-2">
-      {% for category, message in messages %}
-        {# Базовая логика для разных категорий уведомлений (success, danger/error) #}
-        <div class="p-4 rounded-md border {% if category == 'success' %}bg-green-50 text-green-800 border-green-200{% elif category == 'danger' or category == 'error' %}bg-red-50 text-red-800 border-red-200{% else %}bg-blue-50 text-blue-800 border-blue-200{% endif %}" role="alert">
+{% if messages %}
+    <div id="toast-container" class="fixed top-16 left-0 right-0 notifications mx-[11%]">
+      {% for message in messages %}
+        <div class="toast-item {{ message.tags }} p-4 rounded-md">
           {{ message }}
         </div> 
       {% endfor %}
     </div>
   {% endif %}
+<body class="flex flex-col min-h-full bg-white text-gray-900">
+  <header class="flex-shrink-0">
+    <nav class="bg-gray-50 text-black px-4 py-3 flex items-center justify-between">
+    {% block navbar %}
+    {% if not user.is_authenticated %}
+        <div class="flex items-center justify-between w-full">
+        <ul class="flex space-x-4">
+            <li>
+                <a class="text-base font-bold hover:text-black whitespace-nowrap" href="{% url 'index' %}">{% translate "Task Manager" %}</a>
+            </li>
+            <li>
+                <a class="text-black hover:opacity-70 transition-colors" href="{% url 'users' %}">{% translate "Users" %}</a>
+            </li>
+        </ul>
+        <ul class="flex space-x-4">
+            <li>
+            <a class="text-black hover:opacity-70 transition-colors" href="{% url 'login' %}">{% translate "Log in" context "navbar label" %}</a>
+            </li>  
+            <li>
+            <a class="text-black hover:opacity-70 transition-colors" href="{% url 'signup' %}">{% translate "Sign up" context "navbar label" %}</a>
+            </li>  
+        </ul>    
+        </div>
+      {% else %}
+        <div class="flex items-center justify-between w-full">
+          <ul class="flex space-x-4">
+              <li>
+                  <a class="text-base font-bold hover:text-black whitespace-nowrap" href="{% url 'index' %}">{% translate "Task Manager" %}</a>
+              </li>
+              <li>
+                  <a class="text-black hover:opacity-70 transition-colors" href="{% url 'users' %}">{% translate "Users" %}</a>
+              </li>
+              <li>
+              <a class="text-black hover:opacity-70 transition-colors" href="">{% translate "Statuses" context "navbar label" %}</a>
+              </li>  
+              <li>
+              <a class="text-black hover:opacity-70 transition-colors" href="">{% translate "Marks" context "navbar label" %}</a>
+              </li>  
+              <li>
+              <a class="text-black hover:opacity-70 transition-colors" href="">{% translate "Tasks" context "navbar label" %}</a>
+              </li>
+          </ul>
+          <ul class="flex space-x-4">
+              <li>
+                <form class="text-black hover:opacity-70 transition-colors" action="{% url 'logout' %}" method="post">
+                  {% csrf_token %}
+                  <button type="submit">{% translate "Log out" context "navbar label" %}</button>
+                </form>
+              </li>
+          </ul>    
+        </div>
+      {% endif %}
+    {% endblock %}
+    </nav>
+  </header>
     {% block content %}{% endblock %}
 <div class="w-full mt-auto overflow-hidden">
   <div class="mx-[11%] border-t border-gray-200"></div>
