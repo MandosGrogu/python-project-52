@@ -2,7 +2,7 @@
 {% load i18n %}
 {% block content %}
 <main class="mx-[11%] p-4 mt-6">
-    <h1 class="text-2xl font-bold">{% translate "Task view" context "navbar label" %}</h1>
+    <h1 class="text-2xl font-bold">{% translate "Task view" %}</h1>
         <div class="space-y-4 px-8 py-4 bg-mist-700 border border-gray-200 p-4 text-white text-xl font-bold">
             {{ task.title }}
         </div>
@@ -11,10 +11,10 @@
             <hr class="my-4 border-t-2 border-gray-300">
             <div class="flex items-center justify-between w-full">
                 <div class="grid grid-cols-2 w-full">
-                    <div class="leading-tight"><p>Author</p><br>
-                        <p>Performer</p><br>
-                        <p>Status</p><br>
-                        <p>Created at</p><br>
+                    <div class="leading-tight"><p>{% translate "Author" %}</p><br>
+                        <p>{% translate "Performer" %}</p><br>
+                        <p>{% translate "Status" %}</p><br>
+                        <p>{% translate "Created at" %}</p><br>
                     </div>
                     <div class="leading-tight"><p>{{ task.author }}</p><br>
                         <p>{{ task.performer }}</p><br>
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="-mt-1">
-                <p class="font-bold">Labels:</p>
+                <p class="font-bold">{% translate "Labels:" %}</p>
                 {% for label in task.labels.all %}
                     <ul class="list-disc pl-5">
                         <li>{{ label }}</li>
@@ -32,8 +32,8 @@
                 {% endfor %}
             </div>
             <div class="flex items-center gap-4 pt-2">
-                <a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'task_update' task.id %}">{% translate "Change" context "navbar label" %}</a>
-                <a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'task_delete' task.id %}">{% translate "Delete" context "navbar label" %}</a>
+                <a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'task_update' task.id %}">{% translate "Change" %}</a>
+                <a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'task_delete' task.id %}">{% translate "Delete" %}</a>
             </div>
         </div>
   </main>

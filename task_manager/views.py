@@ -1,26 +1,30 @@
 from django.contrib import messages
-from django.shortcuts import redirect, render, get_object_or_404
-from django.views.decorators.http import require_http_methods
-from .forms import CustomUserCreationForm
 from django.contrib.auth import get_user_model, login
 from django.contrib.auth.views import LoginView, LogoutView
 from django.contrib.messages.views import SuccessMessageMixin
+from django.shortcuts import get_object_or_404, redirect, render
+from django.views.decorators.http import require_http_methods
+
+from .forms import CustomUserCreationForm
 
 
 class CustomLoginView(SuccessMessageMixin, LoginView):
     template_name = 'registration/login.html'
     success_message = "Вы залогинены"
 
+
 class CustomLogoutView(LogoutView):
     def post(self, request, *args, **kwargs):
         messages.success(request, 'Вы разлогинены')
         return super().post(request, *args, **kwargs)
+
 
 def index(request):
     return render(
         request,
         "index.html",
     )
+
 
 @require_http_methods(['GET', 'POST'])
 def signup_view(request):
@@ -50,11 +54,6 @@ def signup_view(request):
         context['form'] = form
     return render(request, 'registration/signup.html', context)
 
-'''@require_http_methods(['POST'])
-def logout_view(request):
-    logout(request, user) 
-    messages.success(request, "Вы разлогинены")
-    return redirect('index')'''
 
 @require_http_methods(['GET', 'POST'])
 def delete_view(request, pk):
@@ -67,6 +66,7 @@ def delete_view(request, pk):
         user_obj.delete()
         messages.success(request, "Пользователь успешно удален")
     return redirect('users')
+
 
 @require_http_methods(['GET', 'POST'])
 def update_view(request, pk):

@@ -5,7 +5,7 @@
       <h1 class="text-2xl font-bold">{% translate "Tasks" %}</h1>
       <form action="{% url 'task_create' %}" method="POST">
           {% csrf_token %}
-          <button class="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-normal text-medium rounded-lg transition-colors text-center" type="submit">{% translate "Create task" context "button label" %}</button>
+          <button class="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-normal text-medium rounded-lg transition-colors text-center" type="submit">{% translate "Create task" %}</button>
       </form>
         <div class="space-y-4 px-8 py-4 bg-gray-50 border border-gray-200 p-4">
             <form method="get" action="{% url 'tasks' %}">
@@ -26,7 +26,7 @@
                     {% endif %}
                 {% endfor %}
             </div>
-            <button class="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-normal text-lg rounded-lg transition-colors text-center" type="submit">Показать</button>
+            <button class="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-normal text-lg rounded-lg transition-colors text-center" type="submit">{% translate "Show" %}</button>
         </form>
         </div>
       <div class="pt-6 overflow-x-auto w-full">
@@ -34,11 +34,11 @@
             <thead>
                 <tr>
                     <th class="h-9 align-top pt-2 px-4">ID</th>
-                    <th class="h-9 align-top pt-2 px-4">Title</th>
-                    <th class="h-9 align-top pt-2 px-4">Status</th>
-                    <th class="h-9 align-top pt-2 px-4">Author</th>
-                    <th class="h-9 align-top pt-2 px-4">Performer</th>
-                    <th class="h-9 align-top pt-2 px-4">Created at</th>
+                    <th class="h-9 align-top pt-2 px-4">{% translate "Title" %}</th>
+                    <th class="h-9 align-top pt-2 px-4">{% translate "Status" %}</th>
+                    <th class="h-9 align-top pt-2 px-4">{% translate "Author" %}</th>
+                    <th class="h-9 align-top pt-2 px-4">{% translate "Performer" %}</th>
+                    <th class="h-9 align-top pt-2 px-4">{% translate "Created at" %}</th>
                     <th class="h-9 align-top pt-2 px-4"> </th>
                 </tr>
             </thead>
@@ -51,7 +51,7 @@
                     <td class="py-2">{{ task.author }}</td>
                     <td class="py-2">{{ task.performer }}</td>
                     <td class="py-2">{{ task.created_at }}</td>
-                    <td class="py-2"><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'task_update' task.id %}">{% translate "Change" context "navbar label" %}</a><br><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'task_delete' task.id %}">{% translate "Delete" context "navbar label" %}</a>
+                    <td class="py-2"><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'task_update' task.id %}">{% translate "Change" %}</a><br><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'task_delete' task.id %}">{% translate "Delete" %}</a>
                 </td>
                 </tr>
                 {% endfor %}

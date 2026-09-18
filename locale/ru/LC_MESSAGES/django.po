@@ -83,13 +83,6 @@ msgstr ""
 msgid "Cancel"
 msgstr ""
 
-#: bugsink/myenv/lib/python3.12/site-packages/bsmain/templates/bsmain/auth_token_list.html:79
-#: bugsink/myenv/lib/python3.12/site-packages/django/forms/formsets.py:499
-#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:23
-#: bugsink/myenv/lib/python3.12/site-packages/issues/templates/issues/issue_list.html:170
-msgid "Delete"
-msgstr ""
-
 #: bugsink/myenv/lib/python3.12/site-packages/bsmain/templates/bsmain/auth_token_list.html:88
 msgid "No Auth Tokens."
 msgstr ""
@@ -739,10 +732,6 @@ msgstr ""
 
 #: bugsink/myenv/lib/python3.12/site-packages/django/forms/widgets.py:528
 msgid "Currently"
-msgstr ""
-
-#: bugsink/myenv/lib/python3.12/site-packages/django/forms/widgets.py:529
-msgid "Change"
 msgstr ""
 
 #: bugsink/myenv/lib/python3.12/site-packages/django/forms/widgets.py:866
@@ -2120,10 +2109,6 @@ msgstr ""
 msgid "Preferences"
 msgstr ""
 
-#: bugsink/myenv/lib/python3.12/site-packages/theme/templates/base.html:118
-msgid "Log out"
-msgstr ""
-
 #: bugsink/myenv/lib/python3.12/site-packages/theme/templates/includes/copy_button_only.html:11
 msgid "Copy"
 msgstr ""
@@ -2301,19 +2286,96 @@ msgstr "Практические курсы по программировани�
 msgid "Learn more"
 msgstr "Узнать больше"
 
-#: task_manager/templates/registration/login.html:5
-#, fuzzy
-#| msgctxt "navbar label"
-#| msgid "Log in"
-msgid "Log in"
-msgstr "Вход"
-
 #: task_manager/templates/registration/login.html:9
 msgctxt "button label"
 msgid "Log in"
 msgstr "Войти"
 
+msgid "Log out"
+msgstr "Выход"
+
 #: task_manager/templates/registration/signup.html:9
 msgctxt "button label"
 msgid "Sign up"
 msgstr "Зарегистрировать"
+
+msgid "Statuses"
+msgstr "Статусы"
+
+msgid "Create status"
+msgstr "Создать статус"
+
+msgid "Create label"
+msgstr "Создать метку"
+
+msgid "Create task"
+msgstr "Создать задачу"
+
+msgid "Labels"
+msgstr "Метки"
+
+msgid "Change"
+msgstr "Изменить"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "Show"
+msgstr "Показать"
+
+msgid "Tasks"
+msgstr "Задачи"
+
+msgid "Task"
+msgstr "Задача"
+
+msgid "Create"
+msgstr "Создать"
+
+msgid "Update"
+msgstr "Обновить"
+
+msgid "Task view"
+msgstr "Просмотр задачи"
+
+msgid "Author"
+msgstr "Автор"
+
+msgid "Performer"
+msgstr "Исполнитель"
+
+msgid "Status"
+msgstr "Статус"
+
+msgid "Full name"
+msgstr "Полное имя"
+
+msgid "Created at"
+msgstr "Дата создания"
+
+msgid "Labels:"
+msgstr "Метки:"
+
+msgid "Username"
+msgstr "Имя пользователя"
+
+msgid "Label"
+msgstr "Метка"
+
+msgid "Title:"
+msgstr "Имя: "
+
+msgid "Title"
+msgstr "Имя "
+
+msgid "Description:"
+msgstr "Описание:"
+
+msgid "Status:"
+msgstr "Статус:"
+
+msgid "Performer:"
+msgstr "Исполнитель:"
+
+msgid "Only own tasks:"
+msgstr "Только свои задачи:"

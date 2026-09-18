@@ -1,0 +1,12 @@
+line-length = 80
+
+exclude = [
+    "**/migrations/*.py",
+]
+
+[lint.per-file-ignores]
+"__init__.py" = ["F401"]
+
+[lint]
+preview = true
+select = ["E", "F", "I", "C90"]

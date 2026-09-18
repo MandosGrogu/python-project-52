@@ -2286,6 +2286,9 @@ msgctxt "button label"
 msgid "Войти"
 msgstr "Log in"
 
+msgid "Выход"
+msgstr "Log out"
+
 msgctxt "navbar label"
 msgid "Регистрация"
 msgstr "Sign up"
@@ -2302,3 +2305,84 @@ msgstr "Practical programming courses"
 
 msgid "Узнать больше"
 msgstr "Learn more"
+
+msgid "Статусы"
+msgstr "Statuses"
+
+msgid "Создать статус"
+msgstr "Create status"
+
+msgid "Создать метку"
+msgstr "Create label"
+
+msgid "Создать задачу"
+msgstr "Create task"
+
+msgid "Метки"
+msgstr "Labels"
+
+msgid "Изменить"
+msgstr "Change"
+
+msgid "Удалить"
+msgstr "Delete"
+
+msgid "Показать"
+msgstr "Show"
+
+msgid "Задачи"
+msgstr "Tasks"
+
+msgid "Задача"
+msgstr "Task"
+
+msgid "Создать"
+msgstr "Create"
+
+msgid "Обновить"
+msgstr "Update"
+
+msgid "Просмотр задачи"
+msgstr "Task view"
+
+msgid "Автор"
+msgstr "Author"
+
+msgid "Исполнитель"
+msgstr "Performer"
+
+msgid "Статус"
+msgstr "Status"
+
+msgid "Полное имя"
+msgstr "Full name"
+
+msgid "Дата создания"
+msgstr "Created at"
+
+msgid "Метки:"
+msgstr "Labels:"
+
+msgid "Метка"
+msgstr "Label"
+
+msgid "Имя пользователя"
+msgstr "Username"
+
+msgid "Имя: "
+msgstr "Title:"
+
+msgid "Имя "
+msgstr "Title"
+
+msgid "Описание:"
+msgstr "Description:"
+
+msgid "Статус:"
+msgstr "Status:"
+
+msgid "Исполнитель:"
+msgstr "Performer:"
+
+msgid "Только свои задачи:"
+msgstr "Only own tasks:"

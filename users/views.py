@@ -1,7 +1,5 @@
-from django.contrib import messages
-from django.shortcuts import redirect, render
-from django.views.decorators.http import require_http_methods
 from django.contrib.auth import get_user_model
+from django.shortcuts import render
 
 
 def index(request):

@@ -1,10 +1,12 @@
 from django.contrib import messages
-from django.shortcuts import redirect, render, get_object_or_404
-from django.views.decorators.http import require_http_methods
-from .models import Status
 from django.contrib.auth.decorators import login_required
-from .forms import CustomStatusForm
 from django.db.models import ProtectedError
+from django.shortcuts import get_object_or_404, redirect, render
+from django.views.decorators.http import require_http_methods
+
+from .forms import CustomStatusForm
+from .models import Status
+
 
 @login_required
 def index(request):
@@ -15,18 +17,20 @@ def index(request):
         {'statuses': statuses},
     )
 
+
 @login_required
 @require_http_methods(['GET', 'POST'])
 def status_create(request):
     if request.method == 'POST':
         form = CustomStatusForm(request.POST, request=request)
         if form.is_valid():
-            status = form.save()
+            form.save()
             messages.success(request, "Статус успешно создан")
             return redirect('statuses') 
     else: 
         form = CustomStatusForm()
     return render(request, 'statuses/create.html', {'form': form})
+
 
 @login_required
 @require_http_methods(['GET', 'POST'])
@@ -43,6 +47,7 @@ def status_delete_view(request, pk):
         )
         return redirect('statuses')
 
+
 @login_required
 @require_http_methods(['GET', 'POST'])
 def status_update_view(request, pk):
@@ -55,7 +60,11 @@ def status_update_view(request, pk):
             return redirect('statuses')
         else:
             form = CustomStatusForm()
-            return render(request, 'statuses/update.html', {'form': form, 'ID': pk})
+            return render(
+                request, 
+                'statuses/update.html', 
+                {'form': form, 'ID': pk}
+                )
     else:
         form = CustomStatusForm(instance=status_obj)
     return render(request, 'statuses/update.html', {'form': form, 'ID': pk})

@@ -8,9 +8,9 @@
             <thead>
                 <tr>
                     <th class="h-9 align-top pt-2 px-4">ID</th>
-                    <th class="h-9 align-top pt-2 px-4">Username</th>
-                    <th class="h-9 align-top pt-2 px-4">Full name</th>
-                    <th class="h-9 align-top pt-2 px-4">Created at</th>
+                    <th class="h-9 align-top pt-2 px-4">{% translate "Username" %}</th>
+                    <th class="h-9 align-top pt-2 px-4">{% translate "Full name" %}</th>
+                    <th class="h-9 align-top pt-2 px-4">{% translate "Created at" %}</th>
                     <th class="h-9 align-top pt-2 px-4"> </th>
                 </tr>
             </thead>
@@ -21,7 +21,7 @@
                     <td class="py-2">{{ user.username }}</td>
                     <td class="py-2">{{ user.firstname }} {{ user.lastname }}</td>
                     <td class="py-2">{{ user.created_at }}</td>
-                    <td class="py-2"><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'update' user.id %}">{% translate "Change" context "navbar label" %}</a><br><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'delete' user.id %}">{% translate "Delete" context "navbar label" %}</a>
+                    <td class="py-2"><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'update' user.id %}">{% translate "Change" %}</a><br><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'delete' user.id %}">{% translate "Delete" %}</a>
                 </td>
                 </tr>
                 {% endfor %}

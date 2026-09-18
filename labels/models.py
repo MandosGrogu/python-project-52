@@ -1,6 +1,6 @@
 from django.db import models
-from django.contrib import messages
 from django.db.models import ProtectedError
+
 
 class Label(models.Model):
     title = models.CharField(max_length=500, unique=True)

@@ -50,20 +50,20 @@
                   <a class="text-black hover:opacity-70 transition-colors" href="{% url 'users' %}">{% translate "Users" %}</a>
               </li>
               <li>
-              <a class="text-black hover:opacity-70 transition-colors" href="{% url 'statuses' %}">{% translate "Statuses" context "navbar label" %}</a>
+              <a class="text-black hover:opacity-70 transition-colors" href="{% url 'statuses' %}">{% translate "Statuses" %}</a>
               </li>  
               <li>
-              <a class="text-black hover:opacity-70 transition-colors" href="{% url 'labels' %}">{% translate "Labels" context "navbar label" %}</a>
+              <a class="text-black hover:opacity-70 transition-colors" href="{% url 'labels' %}">{% translate "Labels" %}</a>
               </li>  
               <li>
-              <a class="text-black hover:opacity-70 transition-colors" href="{% url 'tasks' %}">{% translate "Tasks" context "navbar label" %}</a>
+              <a class="text-black hover:opacity-70 transition-colors" href="{% url 'tasks' %}">{% translate "Tasks" %}</a>
               </li>
           </ul>
           <ul class="flex space-x-4">
               <li>
                 <form class="text-black hover:opacity-70 transition-colors" action="{% url 'logout' %}" method="post">
                   {% csrf_token %}
-                  <button type="submit">{% translate "Log out" context "navbar label" %}</button>
+                  <button type="submit">{% translate "Log out" %}</button>
                 </form>
               </li>
           </ul>    

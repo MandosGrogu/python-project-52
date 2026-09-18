@@ -1,10 +1,12 @@
 from django.contrib import messages
-from django.shortcuts import redirect, render, get_object_or_404
-from django.views.decorators.http import require_http_methods
-from .models import Label
 from django.contrib.auth.decorators import login_required
-from .forms import CustomLabelForm
 from django.db.models import ProtectedError
+from django.shortcuts import get_object_or_404, redirect, render
+from django.views.decorators.http import require_http_methods
+
+from .forms import CustomLabelForm
+from .models import Label
+
 
 @login_required
 def index(request):
@@ -15,18 +17,20 @@ def index(request):
         {'labels': labels},
     )
 
+
 @login_required
 @require_http_methods(['GET', 'POST'])
 def label_create(request):
     if request.method == 'POST':
         form = CustomLabelForm(request.POST, request=request)
         if form.is_valid():
-            label = form.save()
+            form.save()
             messages.success(request, "Метка успешно создана")
             return redirect('labels') 
     else: 
         form = CustomLabelForm()
     return render(request, 'labels/create.html', {'form': form})
+
 
 @login_required
 @require_http_methods(['GET', 'POST'])
@@ -43,6 +47,7 @@ def label_delete_view(request, pk):
         )
         return redirect('labels')
 
+
 @login_required
 @require_http_methods(['GET', 'POST'])
 def label_update_view(request, pk):
@@ -55,7 +60,11 @@ def label_update_view(request, pk):
             return redirect('labels')
         else:
             form = CustomLabelForm()
-            return render(request, 'labels/update.html', {'form': form, 'ID': pk})
+            return render(
+                request, 
+                'labels/update.html', 
+                {'form': form, 'ID': pk}
+                )
     else:
         form = CustomLabelForm(instance=label_obj)
     return render(request, 'labels/update.html', {'form': form, 'ID': pk})

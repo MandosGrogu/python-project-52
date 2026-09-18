@@ -1,9 +1,11 @@
 from django.contrib import messages
-from django.shortcuts import redirect, render, get_object_or_404
-from django.views.decorators.http import require_http_methods
-from .models import Task
 from django.contrib.auth.decorators import login_required
+from django.shortcuts import get_object_or_404, redirect, render
+from django.views.decorators.http import require_http_methods
+
 from .forms import CustomTaskForm, TaskFilterForm
+from .models import Task
+
 
 @login_required
 def index(request):
@@ -30,6 +32,7 @@ def index(request):
     },
     )
 
+
 @login_required
 @require_http_methods(['GET', 'POST'])
 def task_create(request):
@@ -45,11 +48,13 @@ def task_create(request):
         form = CustomTaskForm()
     return render(request, 'tasks/create.html', {'form': form})
 
+
 @login_required
 @require_http_methods(['GET'])
 def task_show_view(request, pk):
     task_obj = get_object_or_404(Task, pk=pk)
     return render(request, 'tasks/show.html', {'task': task_obj})
+
 
 @login_required
 @require_http_methods(['GET', 'POST'])
@@ -63,6 +68,7 @@ def task_delete_view(request, pk):
         messages.success(request, "Задача успешно удалена")
         return redirect('tasks')
 
+
 @login_required
 @require_http_methods(['GET', 'POST'])
 def task_update_view(request, pk):
@@ -75,7 +81,11 @@ def task_update_view(request, pk):
             return redirect('tasks')
         else:
             form = CustomTaskForm()
-            return render(request, 'tasks/update.html', {'form': form, 'ID': pk})
+            return render(
+                request, 
+                'tasks/update.html', 
+                {'form': form, 'ID': pk}
+                )
     else:
         form = CustomTaskForm(instance=task_obj)
     return render(request, 'tasks/update.html', {'form': form, 'ID': pk})
