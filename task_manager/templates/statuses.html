@@ -17,13 +17,13 @@
                     <th class="h-9 align-top pt-2 px-4"> </th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="divide-y divide-gray-300">
                 {% for status in statuses %}
-                <tr class="divide-y divide-gray-300 text-center bg-gray-50 even:bg-white align-top" >
-                    <td>{{ status.id }}</td>
-                    <td>{{ status.title }}</td>
-                    <td>{{ user.created_at }}</td>
-                    <td><a class="text-black hover:opacity-70 transition-colors" href="{% url 'status_update' status.id %}">{% translate "Change" context "navbar label" %}</a><br><a class="text-black hover:opacity-70 transition-colors" href="{% url 'status_delete' status.id %}">{% translate "Delete" context "navbar label" %}</a>
+                <tr class="text-center bg-gray-50 even:bg-white align-top h-20" >
+                    <td class="py-2">{{ status.id }}</td>
+                    <td class="py-2">{{ status.title }}</td>
+                    <td class="py-2">{{ user.created_at }}</td>
+                    <td class="py-2"><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'status_update' status.id %}">{% translate "Change" context "navbar label" %}</a><br><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'status_delete' status.id %}">{% translate "Delete" context "navbar label" %}</a>
                 </form></td>
                 </tr>
                 {% endfor %}

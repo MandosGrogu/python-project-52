@@ -2,8 +2,8 @@
 {% load i18n %}
 {% block content %}
 <main class="mx-[11%] p-4 mt-6">
-            <h1 class="text-2xl font-bold">{% translate "Create status" context "navbar label" %}</h1>
-      <form action="{% url 'status_create' %}" method="POST">
+            <h1 class="text-2xl font-bold">{% translate "Create label" context "navbar label" %}</h1>
+      <form action="{% url 'label_create' %}" method="POST">
           {% csrf_token %}
           <div class="w-1/2 pt-4 pb-4">
             {% for field in form %}

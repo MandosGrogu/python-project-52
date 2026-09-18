@@ -4,6 +4,7 @@ from django.views.decorators.http import require_http_methods
 from .models import Status
 from django.contrib.auth.decorators import login_required
 from .forms import CustomStatusForm
+from django.db.models import ProtectedError
 
 @login_required
 def index(request):
@@ -23,9 +24,6 @@ def status_create(request):
             status = form.save()
             messages.success(request, "Статус успешно создан")
             return redirect('statuses') 
-        else:
-            form = CustomStatusForm()
-        return render(request, 'statuses/create.html', {'form': form})
     else: 
         form = CustomStatusForm()
     return render(request, 'statuses/create.html', {'form': form})
@@ -34,9 +32,16 @@ def status_create(request):
 @require_http_methods(['GET', 'POST'])
 def status_delete_view(request, pk):
     status_obj = get_object_or_404(Status, pk=pk)
-    status_obj.delete()
-    messages.success(request, "Статус успешно удален")
-    return redirect('statuses')
+    try:
+        status_obj.delete()
+        messages.success(request, "Статус успешно удален")
+        return redirect('statuses')
+    except ProtectedError:
+        messages.error(
+            request, 
+            "Невозможно удалить статус, потому что он используется"
+        )
+        return redirect('statuses')
 
 @login_required
 @require_http_methods(['GET', 'POST'])

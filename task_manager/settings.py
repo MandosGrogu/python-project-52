@@ -10,10 +10,21 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.1/ref/settings/
 """
 import os
-
+from dotenv import load_dotenv
 from django.utils.translation import gettext_lazy as _
 from django.contrib.messages import constants as messages
 from pathlib import Path
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
+
+load_dotenv("secret.env")
+
+sentry_sdk.init(
+    dsn=os.getenv('DSN_KEY'),
+    integrations=[DjangoIntegration()],
+    traces_sample_rate=0.3, 
+    send_default_pii=True
+)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -70,8 +81,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_tailwind_cli',
+    'labels',
     'task_manager',
     'statuses',
+    'tasks',
     'users',
 ]
 

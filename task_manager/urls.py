@@ -23,6 +23,8 @@ from .views import CustomLoginView, CustomLogoutView
 from users import urls as users_urls
 from statuses import urls as statuses_urls
 from statuses import views as statuses_views
+from tasks import views as tasks_views
+from labels import views as labels_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -38,4 +40,13 @@ urlpatterns = [
     path('statuses/create/', statuses_views.status_create, name='status_create'),
     path('statuses/<int:pk>/delete/', statuses_views.status_delete_view, name='status_delete'),
     path('statuses/<int:pk>/update/', statuses_views.status_update_view, name='status_update'),
+    path("tasks/", tasks_views.index, name='tasks'),
+    path('tasks/create/', tasks_views.task_create, name='task_create'),
+    path('tasks/<int:pk>/delete/', tasks_views.task_delete_view, name='task_delete'),
+    path('tasks/<int:pk>/update/', tasks_views.task_update_view, name='task_update'),
+    path('tasks/<int:pk>/', tasks_views.task_show_view, name='task_show'),
+    path("labels/", labels_views.index, name='labels'),
+    path('labels/create/', labels_views.label_create, name='label_create'),
+    path('labels/<int:pk>/delete/', labels_views.label_delete_view, name='label_delete'),
+    path('labels/<int:pk>/update/', labels_views.label_update_view, name='label_update'),
 ]

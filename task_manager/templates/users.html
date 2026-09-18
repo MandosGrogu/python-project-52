@@ -14,14 +14,14 @@
                     <th class="h-9 align-top pt-2 px-4"> </th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="divide-y divide-gray-300">
                 {% for user in users %}
-                <tr class="divide-y divide-gray-300 text-center bg-gray-50 even:bg-white align-top" >
-                    <td>{{ user.id }}</td>
-                    <td>{{ user.username }}</td>
-                    <td>{{ user.firstname }} {{ user.lastname }}</td>
-                    <td>{{ user.created_at }}</td>
-                    <td><a class="text-black hover:opacity-70 transition-colors" href="{% url 'update' user.id %}">{% translate "Change" context "navbar label" %}</a><br><a class="text-black hover:opacity-70 transition-colors" href="{% url 'delete' user.id %}">{% translate "Delete" context "navbar label" %}</a>
+                <tr class="text-center bg-gray-50 even:bg-white align-top h-20" >
+                    <td class="py-2">{{ user.id }}</td>
+                    <td class="py-2">{{ user.username }}</td>
+                    <td class="py-2">{{ user.firstname }} {{ user.lastname }}</td>
+                    <td class="py-2">{{ user.created_at }}</td>
+                    <td class="py-2"><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'update' user.id %}">{% translate "Change" context "navbar label" %}</a><br><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'delete' user.id %}">{% translate "Delete" context "navbar label" %}</a>
                 </td>
                 </tr>
                 {% endfor %}
