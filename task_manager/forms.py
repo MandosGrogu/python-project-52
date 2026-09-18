@@ -7,7 +7,7 @@ from django.contrib.auth.forms import (
 )
 from django.utils.translation import gettext_lazy as _
 
-from users.models import CustomUser
+from users.models import User
 
 
 class StyledLoginForm(AuthenticationForm):
@@ -33,7 +33,7 @@ class StyledLoginForm(AuthenticationForm):
     )
 
 
-class CustomUserCreationForm(UserCreationForm):
+class UserCreationForm(UserCreationForm):
     def __init__(self, *args, **kwargs):
         self.request = kwargs.pop('request', None)
         super().__init__(*args, **kwargs)
@@ -123,7 +123,7 @@ class CustomUserCreationForm(UserCreationForm):
 
     def clean_username(self):
         username = self.cleaned_data.get('username')
-        if CustomUser.objects.filter(username=username).exists() \
+        if User.objects.filter(username=username).exists() \
         and self.request:
             messages.warning(self.request, "уже существует")
         return username

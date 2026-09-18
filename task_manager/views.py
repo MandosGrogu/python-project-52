@@ -5,7 +5,7 @@ from django.contrib.messages.views import SuccessMessageMixin
 from django.shortcuts import get_object_or_404, redirect, render
 from django.views.decorators.http import require_http_methods
 
-from .forms import CustomUserCreationForm
+from .forms import UserCreationForm
 
 
 class CustomLoginView(SuccessMessageMixin, LoginView):
@@ -39,13 +39,13 @@ def signup_view(request):
         'from_reg': is_reg_url,
     }
     if request.method == 'POST':
-        form = CustomUserCreationForm(request.POST, request=request)
+        form = UserCreationForm(request.POST, request=request)
         if form.is_valid():
             user = form.save() 
             login(request, user) 
             messages.success(request, "Пользователь успешно зарегистрирован")
             return redirect('login') 
-    form = CustomUserCreationForm()
+    form = UserCreationForm()
     context['form'] = form
     return render(request, 'registration/signup.html', context)
 
@@ -83,16 +83,16 @@ def update_view(request, pk):
         messages.warning(request, "У вас нет прав для изменения")
         return redirect('users')
     if request.method == 'POST':
-        form = CustomUserCreationForm(request.POST, instance=user_obj)
+        form = UserCreationForm(request.POST, instance=user_obj)
         if form.is_valid():
             form.save()
             messages.success(request, "Пользователь успешно изменен")
             return redirect('users')
         else:
-            form = CustomUserCreationForm()
+            form = UserCreationForm()
             context['form'] = form
             return render(request, 'registration/update.html', context)
     else:
-        form = CustomUserCreationForm(instance=user_obj)
+        form = UserCreationForm(instance=user_obj)
         context['form'] = form
     return render(request, 'registration/update.html', context)

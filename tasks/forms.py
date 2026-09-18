@@ -3,7 +3,7 @@ from django.utils.translation import gettext_lazy as _
 
 from labels.models import Label
 from statuses.models import Status
-from users.models import CustomUser
+from users.models import User
 
 from .models import Task
 
@@ -48,7 +48,7 @@ class CustomTaskForm(forms.ModelForm):
     )
     performer = forms.ModelChoiceField(
         label=_("Performer:"),
-        queryset=CustomUser.objects.all(),
+        queryset=User.objects.all(),
         empty_label="Choose performer",
         widget=forms.Select(attrs={'class': (
             'block w-full border-2 border-gray-300 outline-none '
@@ -97,7 +97,7 @@ class TaskFilterForm(forms.Form):
             )})
     )
     performer = forms.ModelChoiceField(
-        queryset=CustomUser.objects.all(),
+        queryset=User.objects.all(),
         empty_label="Не выбрано",
         required=False,
         label=_("Performer"),

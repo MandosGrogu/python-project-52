@@ -12,7 +12,7 @@ username_validator = RegexValidator(
 )
 
 
-class CustomUser(AbstractUser):
+class User(AbstractUser):
     firstname = models.CharField(max_length=250)
     lastname = models.CharField(max_length=250)
     username = models.CharField(
