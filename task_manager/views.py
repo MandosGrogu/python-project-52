@@ -45,13 +45,8 @@ def signup_view(request):
             login(request, user) 
             messages.success(request, "Пользователь успешно зарегистрирован")
             return redirect('login') 
-        else:
-            form = CustomUserCreationForm()
-            context['form'] = form
-            return render(request, 'registration/signup.html', context)
-    else: 
-        form = CustomUserCreationForm()
-        context['form'] = form
+    form = CustomUserCreationForm()
+    context['form'] = form
     return render(request, 'registration/signup.html', context)
 
 
