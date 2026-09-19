@@ -2,6 +2,10 @@ install:
 	pip install uv
 	pip install gunicorn uvicorn
 	pip install django
+	pip install django-filter
+	pip install dj-database-url
+	pip install tailwind
+	pip install django-tailwind-cli
 
 build:
 	./build.sh
