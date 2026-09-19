@@ -40,9 +40,9 @@ class UserCreationForm(UserCreationForm):
 
     class Meta(UserCreationForm.Meta):
         model = get_user_model() 
-        fields = ("firstname", "lastname", "username", "password1", "password2")
+        fields = ("first_name", "last_name", "username", "password1", "password2")
 
-    firstname = forms.CharField(required=False,
+    first_name = forms.CharField(required=False,
         label=_("First name:"),
         widget=forms.TextInput(attrs={
             'class': (
@@ -52,7 +52,7 @@ class UserCreationForm(UserCreationForm):
                 )
         })
     )
-    lastname = forms.CharField(required=False,
+    last_name = forms.CharField(required=False,
         label=_("Last name:"),
         widget=forms.TextInput(attrs={
             'class': (
@@ -101,8 +101,8 @@ class UserCreationForm(UserCreationForm):
     )
 
     field_order = [
-        "firstname", 
-        "lastname", 
+        "first_name", 
+        "last_name", 
         "username", 
         "password1", 
         "password2"
