@@ -42,7 +42,7 @@ class UserCreationForm(UserCreationForm):
         model = get_user_model() 
         fields = ("firstname", "lastname", "username", "password1", "password2")
 
-    firstname = forms.CharField(
+    firstname = forms.CharField(required=False,
         label=_("First name:"),
         widget=forms.TextInput(attrs={
             'class': (
@@ -52,7 +52,7 @@ class UserCreationForm(UserCreationForm):
                 )
         })
     )
-    lastname = forms.CharField(
+    lastname = forms.CharField(required=False,
         label=_("Last name:"),
         widget=forms.TextInput(attrs={
             'class': (
