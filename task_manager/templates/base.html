@@ -11,7 +11,7 @@
 {% if messages %}
     <div id="toast-container" class="fixed top-16 left-0 right-0 notifications mx-[11%]">
       {% for message in messages %}
-        <div class="toast-item {{ message.tags }} p-4 rounded-md">
+        <div class="toast-item {{ message.tags }} p-4 rounded-md"  role="alert">
           {{ message }}
         </div> 
       {% endfor %}
