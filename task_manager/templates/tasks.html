@@ -51,7 +51,7 @@
                     <td class="py-2">{{ task.author }}</td>
                     <td class="py-2">{{ task.performer }}</td>
                     <td class="py-2">{{ task.created_at }}</td>
-                    <td class="py-2"><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'task_update' task.id %}"  role="button">{% translate "Change" %}</a><br><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'task_delete' task.id %}"  role="button">{% translate "Delete" %}</a>
+                    <td class="py-2"><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'task_update' task.id %}"  role="link">{% translate "Change" %}</a><br><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'task_delete' task.id %}"  role="link">{% translate "Delete" %}</a>
                 </td>
                 </tr>
                 {% endfor %}

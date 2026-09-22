@@ -23,7 +23,7 @@
                     <td class="py-2">{{ status.id }}</td>
                     <td class="py-2">{{ status.title }}</td>
                     <td class="py-2">{{ user.created_at }}</td>
-                    <td class="py-2"><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'status_update' status.id %}" role="button">{% translate "Change" %}</a><br><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'status_delete' status.id %}" role="button">{% translate "Delete" %}</a>
+                    <td class="py-2"><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'status_update' status.id %}" role="link">{% translate "Change" %}</a><br><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'status_delete' status.id %}" role="link">{% translate "Delete" %}</a>
                 </form></td>
                 </tr>
                 {% endfor %}
