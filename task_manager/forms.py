@@ -44,7 +44,7 @@ class UserCreationForm(UserCreationForm):
         fields = ("first_name", "last_name", "username", "password1", "password2")
 
     first_name = forms.CharField(required=False,
-        label=pgettext_lazy("status label", "First name:"),
+        label=pgettext_lazy("user label", "First name:"),
         widget=forms.TextInput(attrs={
             'class': (
                 'block w-full border-2 border-gray-300 outline-none '
