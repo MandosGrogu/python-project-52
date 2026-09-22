@@ -23,7 +23,7 @@
                     <td class="py-2">{{ label.id }}</td>
                     <td class="py-2">{{ label.title }}</td>
                     <td class="py-2">{{ label.created_at }}</td>
-                    <td class="py-2"><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'label_update' label.id %}">{% translate "Change" %}</a><br><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'label_delete' label.id %}">{% translate "Delete" %}</a>
+                    <td class="py-2"><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'label_update' label.id %}" role="button">{% translate "Change" %}</a><br><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'label_delete' label.id %}" role="button">{% translate "Delete" %}</a>
                 </td>
                 </tr>
                 {% endfor %}
