@@ -2236,6 +2236,7 @@ msgid "Password:"
 msgstr "Пароль:"
 
 #: task_manager/forms.py:22
+msgctxt "user label"
 msgid "First name:"
 msgstr "Имя:"
 
@@ -2362,11 +2363,12 @@ msgstr "Имя пользователя"
 msgid "Label"
 msgstr "Метка"
 
+msgctxt "status label"
 msgid "Title:"
-msgstr "Имя: "
+msgstr "Имя:"
 
 msgid "Title"
-msgstr "Имя "
+msgstr "Имя"
 
 msgid "Description:"
 msgstr "Описание:"

@@ -6,6 +6,7 @@ from django.contrib.auth.forms import (
     get_user_model,
 )
 from django.utils.translation import gettext_lazy as _
+from django.utils.translation import pgettext_lazy
 
 from users.models import User
 
@@ -43,7 +44,7 @@ class UserCreationForm(UserCreationForm):
         fields = ("first_name", "last_name", "username", "password1", "password2")
 
     first_name = forms.CharField(required=False,
-        label=_("First name:"),
+        label=pgettext_lazy("status label", "First name:"),
         widget=forms.TextInput(attrs={
             'class': (
                 'block w-full border-2 border-gray-300 outline-none '

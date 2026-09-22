@@ -1,6 +1,5 @@
 from django import forms
-from django.utils.translation import gettext_lazy as _
-
+from django.utils.translation import pgettext_lazy
 from .models import Status
 
 
@@ -13,7 +12,7 @@ class CustomStatusForm(forms.ModelForm):
         model = Status
         fields = ('title',)
     title = forms.CharField(
-        label=_("Title:"),
+        label=pgettext_lazy("status label", "Title:"),
         widget=forms.TextInput(attrs={
             'class': (
                 'block w-full border-2 border-gray-300 outline-none '
