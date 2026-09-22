@@ -58,7 +58,7 @@ def delete_view(request, pk):
     if request.user != user_obj:
         messages.warning(request, "У вас нет прав для изменения")
         return redirect('users')
-    if request.method == 'POST':
+    else:
         user_obj.delete()
         messages.success(request, "Пользователь успешно удален")
     return redirect('users')
