@@ -21,7 +21,7 @@
                     <td class="py-2">{{ user.username }}</td>
                     <td class="py-2">{{ user.first_name }} {{ user.last_name }}</td>
                     <td class="py-2">{{ user.created_at }}</td>
-                    <td class="py-2"><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'update' user.id %}" role="button">{% translate "Change" %}</a><br><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'delete' user.id %}"  role="button">{% translate "Delete" %}</a>
+                    <td class="py-2"><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'update' user.id %}" role="link">{% translate "Change" %}</a><br><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'delete' user.id %}"  role="link">{% translate "Delete" %}</a>
                 </td>
                 </tr>
                 {% endfor %}
