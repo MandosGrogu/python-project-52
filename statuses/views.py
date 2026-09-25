@@ -37,9 +37,14 @@ def status_create(request):
 def status_delete_view(request, pk):
     status_obj = get_object_or_404(Status, pk=pk)
     try:
-        status_obj.delete()
-        messages.success(request, "Статус успешно удален")
-        return redirect('statuses')
+        if request.method == 'POST':
+            status_obj.delete()
+            messages.success(request, "Статус успешно удален")
+            return redirect('statuses')
+        else:
+            return render(request, 'statuses/delete.html', {
+        'status': status_obj
+        })
     except ProtectedError:
         messages.error(
             request, 

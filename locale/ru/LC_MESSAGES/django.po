@@ -2386,7 +2386,10 @@ msgid "Delete user"
 msgstr "Удаление пользователя"
 
 msgid "Are you sure you want to delete"
-msgstr "Вы уверены, что хотите удалить пользователя"
+msgstr "Вы уверены, что хотите удалить"
 
 msgid "Yes, delete"
 msgstr "Да, удалить"
+
+msgid "Delete status"
+msgstr "Удаление статуса"
