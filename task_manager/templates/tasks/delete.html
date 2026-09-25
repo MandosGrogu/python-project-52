@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% load i18n %}
 {% block content %}
-    <h1 class="my-4">{% translate "Delete status" %}</h1>
+    <h1 class="my-4">{% translate "Delete task" %}</h1>
 
-    <form action="{% url 'label_delete' label.id %}" method="POST">
-        <p>{% translate 'Are you sure you want to delete' %} {{ label.title }}?</p>
+    <form action="{% url 'task_delete' task.id %}" method="POST">
+        <p>{% translate 'Are you sure you want to delete' %} {{ task.title }}?</p>
         {% csrf_token %}
           <button class="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-normal text-medium rounded-lg transition-colors text-center" type="submit" role="button">{% translate "Yes, delete" %}</button>
       </form>

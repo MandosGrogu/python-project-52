@@ -64,9 +64,14 @@ def task_delete_view(request, pk):
         messages.warning(request, "Задачу может удалить только ее автор")
         return redirect('tasks')
     else:
-        task_obj.delete()
-        messages.success(request, "Задача успешно удалена")
-        return redirect('tasks')
+        if request.method == 'POST':
+            task_obj.delete()
+            messages.success(request, "Задача успешно удалена")
+            return redirect('tasks')
+        else:
+            return render(request, 'tasks/delete.html', {
+        'task': task_obj
+        })
 
 
 @login_required

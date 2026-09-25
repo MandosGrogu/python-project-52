@@ -2396,3 +2396,6 @@ msgstr "Удаление статуса"
 
 msgid "Delete label"
 msgstr "Удаление метку"
+
+msgid "Delete task"
+msgstr "Удаление задачи"

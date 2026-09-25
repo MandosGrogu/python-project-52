@@ -39,8 +39,8 @@ def label_delete_view(request, pk):
     try:
         if request.method == 'POST':
             label_obj.delete()
-        messages.success(request, "Метка успешно удалена")
-        return redirect('labels')
+            messages.success(request, "Метка успешно удалена")
+            return redirect('labels')
         else:
             return render(request, 'labels/delete.html', {
         'label': label_obj

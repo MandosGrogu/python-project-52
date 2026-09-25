@@ -2403,3 +2403,6 @@ msgstr "Delete status"
 
 msgid "Удаление метку"
 msgstr "Delete label"
+
+msgid "Удаление задачи"
+msgstr "Delete task"
