@@ -2393,3 +2393,6 @@ msgstr "Да, удалить"
 
 msgid "Delete status"
 msgstr "Удаление статуса"
+
+msgid "Delete label"
+msgstr "Удаление метку"

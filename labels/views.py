@@ -37,9 +37,14 @@ def label_create(request):
 def label_delete_view(request, pk):
     label_obj = get_object_or_404(Label, pk=pk)
     try:
-        label_obj.delete()
+        if request.method == 'POST':
+            label_obj.delete()
         messages.success(request, "Метка успешно удалена")
         return redirect('labels')
+        else:
+            return render(request, 'labels/delete.html', {
+        'label': label_obj
+        })
     except ProtectedError:
         messages.error(
             request, 
