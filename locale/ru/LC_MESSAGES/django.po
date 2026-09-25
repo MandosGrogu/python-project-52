@@ -2381,3 +2381,12 @@ msgstr "Исполнитель:"
 
 msgid "Only own tasks:"
 msgstr "Только свои задачи:"
+
+msgid "Delete user"
+msgstr "Удаление пользователя"
+
+msgid "Are you sure you want to delete"
+msgstr "Вы уверены, что хотите удалить пользователя"
+
+msgid "Yes, delete"
+msgstr "Да, удалить"
