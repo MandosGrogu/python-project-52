@@ -19,7 +19,7 @@
                 <tr class="text-center bg-gray-50 even:bg-white align-top h-20" >
                     <td class="py-2">{{ user.id }}</td>
                     <td class="py-2">{{ user.username }}</td>
-                    <td class="py-2">{{ user.first_name }} {{ user.last_name }}</td>
+                    <td class="py-2">{{ user.fullname }}</td>
                     <td class="py-2">{{ user.created_at }}</td>
                     <td class="py-2"><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'update' user.id %}" role="link">{% translate "Change" %}</a><br><a class="text-blue-600 hover:opacity-70 transition-colors" href="{% url 'delete' user.id %}"  role="link">{% translate "Delete" %}</a>
                 </td>
