@@ -6,7 +6,7 @@ from django.shortcuts import render
 
 def index(request):
     users = get_user_model().objects.annotate(
-    fullname=Concat('first_name', Value(' '), 'last_name')
+    fullName=Concat('first_name', Value(' '), 'last_name')
 )
     return render(
         request,
