@@ -13,6 +13,9 @@ class CustomTaskForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         self.request = kwargs.pop('request', None)
         super().__init__(*args, **kwargs)
+
+        self.fields['performer'].label_from_instance = lambda obj: \
+        f"{obj.first_name} {obj.last_name}".strip() or obj.username
         
     class Meta:
         model = Task

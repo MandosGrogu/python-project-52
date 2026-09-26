@@ -41,7 +41,11 @@ class UserCreationForm(UserCreationForm):
 
     class Meta(UserCreationForm.Meta):
         model = get_user_model() 
-        fields = ("first_name", "last_name", "username", "password1", "password2")
+        fields = ("first_name", 
+        "last_name", 
+        "username", 
+        "password1", 
+        "password2")
 
     first_name = forms.CharField(required=False,
         label=pgettext_lazy("user label", "First name:"),
