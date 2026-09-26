@@ -63,6 +63,7 @@ class CustomTaskForm(forms.ModelForm):
     )
     labels = forms.ModelMultipleChoiceField(
       queryset=Label.objects.all(),
+      required=False,
       widget=forms.SelectMultiple(attrs={'class': (
         'block w-full border-2 border-gray-300 outline-none '
         'focus:outline-none focus:ring-1 focus:ring-blue-700 '

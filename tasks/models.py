@@ -21,7 +21,9 @@ class Task(models.Model):
         related_name='assigned_tasks'
         )
     status = models.ForeignKey(Status, on_delete=models.PROTECT)
-    labels = models.ManyToManyField(Label)
+    labels = models.ManyToManyField(Label,
+    blank=True,
+    null=True,)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
