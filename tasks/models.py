@@ -15,6 +15,7 @@ class Task(models.Model):
         )
     performer = models.ForeignKey(
         settings.AUTH_USER_MODEL, 
+        blank=True,
         null=True, 
         on_delete=models.SET_NULL, 
         related_name='assigned_tasks'

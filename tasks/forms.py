@@ -54,6 +54,7 @@ class CustomTaskForm(forms.ModelForm):
         label=_("Performer:"),
         queryset=User.objects.all(),
         empty_label="Choose performer",
+        required=False,
         widget=forms.Select(attrs={'class': (
             'block w-full border-2 border-gray-300 outline-none '
             'focus:outline-none focus:ring-1 focus:ring-blue-700 '
