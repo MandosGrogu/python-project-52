@@ -1,75 +1,66 @@
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import ProtectedError
-from django.shortcuts import get_object_or_404, redirect, render
-from django.views.decorators.http import require_http_methods
+from django.shortcuts import redirect
+from django.urls import reverse_lazy
+from django.views.generic import CreateView, DeleteView, ListView, UpdateView
 
 from .forms import CustomLabelForm
 from .models import Label
 
 
-@login_required
-def index(request):
-    labels = Label.objects.all()
-    return render(
-        request,
-        "labels.html",
-        {'labels': labels},
-    )
+class LabelListView(LoginRequiredMixin, ListView):
+    model = Label
+    template_name = 'labels.html'
+    context_object_name = 'labels'
 
 
-@login_required
-@require_http_methods(['GET', 'POST'])
-def label_create(request):
-    if request.method == 'POST':
-        form = CustomLabelForm(request.POST, request=request)
-        if form.is_valid():
-            form.save()
-            messages.success(request, "Метка успешно создана")
-            return redirect('labels') 
-    else: 
-        form = CustomLabelForm()
-    return render(request, 'labels/create.html', {'form': form})
+class LabelCreateView(LoginRequiredMixin, CreateView):
+    form_class = CustomLabelForm
+    template_name = 'labels/create.html'
+    success_url = reverse_lazy('labels')
+
+    def get_form_kwargs(self):
+        kwargs = super().get_form_kwargs()
+        kwargs['request'] = self.request
+        return kwargs
+
+    def form_valid(self, form):
+        messages.success(self.request, "Метка успешно создана")
+        return super().form_valid(form)
 
 
-@login_required
-@require_http_methods(['GET', 'POST'])
-def label_delete_view(request, pk):
-    label_obj = get_object_or_404(Label, pk=pk)
-    try:
-        if request.method == 'POST':
-            label_obj.delete()
-            messages.success(request, "Метка успешно удалена")
+class LabelDeleteView(LoginRequiredMixin, DeleteView):
+    model = Label
+    template_name = 'labels/delete.html'
+    context_object_name = 'label'
+    success_url = reverse_lazy('labels')
+
+    def form_valid(self, form):
+        success_url = self.get_success_url()
+        try:
+            self.object.delete()
+            messages.success(self.request, "Метка успешно удалена")
+            return redirect(success_url)
+        except ProtectedError:
+            messages.error(
+                self.request, 
+                "Невозможно удалить метку, потому что она используется"
+            )
             return redirect('labels')
-        else:
-            return render(request, 'labels/delete.html', {
-        'label': label_obj
-        })
-    except ProtectedError:
-        messages.error(
-            request, 
-            "Невозможно удалить метку, потому что она используется"
-        )
-        return redirect('labels')
 
 
-@login_required
-@require_http_methods(['GET', 'POST'])
-def label_update_view(request, pk):
-    label_obj = get_object_or_404(Label, pk=pk)
-    if request.method == 'POST':
-        form = CustomLabelForm(request.POST, instance=label_obj)
-        if form.is_valid():
-            form.save()
-            messages.success(request, "Метка успешно изменена")
-            return redirect('labels')
-        else:
-            form = CustomLabelForm()
-            return render(
-                request, 
-                'labels/update.html', 
-                {'form': form, 'ID': pk}
-                )
-    else:
-        form = CustomLabelForm(instance=label_obj)
-    return render(request, 'labels/update.html', {'form': form, 'ID': pk})
+class LabelUpdateView(LoginRequiredMixin, UpdateView):
+    model = Label
+    form_class = CustomLabelForm
+    template_name = 'labels/update.html'
+    success_url = reverse_lazy('labels')
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['ID'] = self.kwargs['pk']
+        return context
+
+    def form_valid(self, form):
+        messages.success(self.request, "Метка успешно изменена")
+        return super().form_valid(form)

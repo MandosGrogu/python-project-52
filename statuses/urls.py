@@ -20,8 +20,16 @@ from statuses import views
 
 urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
-    path("", views.index, name='statuses'),
-    path('create/', views.status_create, name='status_create'),
-    path('<int:pk>/delete/', views.status_delete_view, name='status_delete'),
-    path('<int:pk>/update/', views.status_update_view, name='status_update'),
+    path("", views.StatusListView.as_view(), name='statuses'),
+    path('create/', views.StatusCreateView.as_view(), name='status_create'),
+    path(
+        '<int:pk>/delete/', 
+        views.StatusDeleteView.as_view(), 
+        name='status_delete'
+        ),
+    path(
+        '<int:pk>/update/', 
+        views.StatusUpdateView.as_view(), 
+        name='status_update'
+        ),
 ]

@@ -20,8 +20,16 @@ from labels import views
 
 urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
-    path("", views.index, name='labels'),
-    path('create/', views.label_create, name='label_create'),
-    path('<int:pk>/delete/', views.label_delete_view, name='label_delete'),
-    path('<int:pk>/update/', views.label_update_view, name='label_update'),
+    path("", views.LabelListView.as_view(), name='labels'),
+    path('create/', views.LabelCreateView.as_view(), name='label_create'),
+    path(
+        '<int:pk>/delete/', 
+        views.LabelDeleteView.as_view(), 
+        name='label_delete'
+        ),
+    path(
+        '<int:pk>/update/', 
+        views.LabelUpdateView.as_view(), 
+        name='label_update'
+        ),
 ]

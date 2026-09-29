@@ -24,6 +24,9 @@ makemigrations:
 migrate:
 	uv run manage.py migrate
 
+test-coverage:
+	uv run pytest --cov=task_manager --cov-report xml
+
 build-styles:
 	uv run manage.py tailwind build
 

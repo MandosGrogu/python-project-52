@@ -20,5 +20,5 @@ from users import views
 
 urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
-    path("", views.index, name='users'),
+    path("", views.UserListView.as_view(), name='users'),
 ]

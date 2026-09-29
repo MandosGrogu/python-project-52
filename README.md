@@ -4,6 +4,7 @@
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=MandosGrogu_python-project-52&metric=coverage)](https://sonarcloud.io/summary/new_code?id=MandosGrogu_python-project-52)
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=MandosGrogu_python-project-52&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=MandosGrogu_python-project-52)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=MandosGrogu_python-project-52&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=MandosGrogu_python-project-52)
+[![task-manager-check Actions Status](https://github.com/MandosGrogu/python-project-52/actions/workflows/task-manager-check.yml/badge.svg)](https://github.com/MandosGrogu/python-project-52/actions)
 
 На практике узнаете о проектировании баз данных, PaaS, мониторинге ошибок, ORM, фреймворке Django, шаблонизации и Tailwind CSS.
 

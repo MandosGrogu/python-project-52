@@ -1,53 +1,72 @@
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.shortcuts import get_object_or_404, redirect, render
+from django.urls import reverse_lazy
 from django.views.decorators.http import require_http_methods
+from django.views.generic import CreateView, DeleteView, ListView, UpdateView
 
 from .forms import CustomTaskForm, TaskFilterForm
 from .models import Task
 
 
-@login_required
-def index(request):
-    tasks = Task.objects.all()
-    form = TaskFilterForm(request.GET or None)
-    if form.is_valid():
-        if form.cleaned_data.get('label'):
-            tasks = tasks.filter(labels=form.cleaned_data['label'])
+class TaskListView(LoginRequiredMixin, ListView):
+    model = Task
+    template_name = 'tasks.html'
+    context_object_name = 'tasks'
 
-        if form.cleaned_data.get('status'):
-            tasks = tasks.filter(status=form.cleaned_data['status'])
+    def get_queryset(self):
+        queryset = (
+            super()
+            .get_queryset()
+            .select_related('status', 'author')
+            .prefetch_related('labels')
+        )
+
+        self.filter_form = TaskFilterForm(self.request.GET or None)
         
-        if form.cleaned_data.get('performer'):
-            tasks = tasks.filter(performer=form.cleaned_data['performer'])
+        if self.filter_form.is_valid():
+            cleaned_data = self.filter_form.cleaned_data
+            
+            if cleaned_data.get('label'):
+                queryset = queryset.filter(labels=cleaned_data['label'])
+                
+            if cleaned_data.get('status'):
+                queryset = queryset.filter(status=cleaned_data['status'])
+                
+            if cleaned_data.get('performer'):
+                queryset = queryset.filter(performer=cleaned_data['performer'])
+                
+            if cleaned_data.get('only_my'):
+                queryset = queryset.filter(author=self.request.user)
+                
+        return queryset
 
-        if form.cleaned_data.get('only_my') and request.user.is_authenticated:
-            tasks = tasks.filter(author=request.user)
-    return render(
-        request,
-        "tasks.html",
-        {
-        'tasks': tasks,
-        'form': form
-    },
-    )
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['form'] = self.filter_form
+        return context
 
 
-@login_required
-@require_http_methods(['GET', 'POST'])
-def task_create(request):
-    if request.method == 'POST':
-        form = CustomTaskForm(request.POST, request=request)
-        if form.is_valid():
-            task = form.save(commit=False)
-            task.author = request.user 
-            task.save()
-            form.save_m2m()
-            messages.success(request, "Задача успешно создана")
-            return redirect('tasks') 
-    else: 
-        form = CustomTaskForm()
-    return render(request, 'tasks/create.html', {'form': form})
+class TaskCreateView(LoginRequiredMixin, CreateView):
+    form_class = CustomTaskForm
+    template_name = 'tasks/create.html'
+    success_url = reverse_lazy('tasks')
+
+    def get_form_kwargs(self):
+        kwargs = super().get_form_kwargs()
+        kwargs['request'] = self.request
+        return kwargs
+
+    def form_valid(self, form):
+        self.object = form.save(commit=False)
+        self.object.author = self.request.user
+        self.object.save()
+        
+        form.save_m2m()
+        
+        messages.success(self.request, "Задача успешно создана")
+        return redirect(self.get_success_url())
 
 
 @login_required
@@ -57,41 +76,43 @@ def task_show_view(request, pk):
     return render(request, 'tasks/show.html', {'task': task_obj})
 
 
-@login_required
-@require_http_methods(['GET', 'POST'])
-def task_delete_view(request, pk):
-    task_obj = get_object_or_404(Task, pk=pk)
-    if task_obj.author != request.user:
-        messages.warning(request, "Задачу может удалить только ее автор")
-        return redirect('tasks')
-    else:
-        if request.method == 'POST':
-            task_obj.delete()
-            messages.success(request, "Задача успешно удалена")
+class TaskDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    model = Task
+    template_name = 'tasks/delete.html'
+    context_object_name = 'task'
+    success_url = reverse_lazy('tasks')
+
+    def test_func(self):
+        task_obj = self.get_object()
+        return task_obj.author == self.request.user
+
+    def handle_no_permission(self):
+
+        if self.request.user.is_authenticated:
+            messages.warning(self.request, 
+            "Задачу может удалить только ее автор")
             return redirect('tasks')
-        else:
-            return render(request, 'tasks/delete.html', {
-        'task': task_obj
-        })
+
+        return super().handle_no_permission()
+
+    def form_valid(self, form):
+        success_url = self.get_success_url()
+        self.object.delete()
+        messages.success(self.request, "Задача успешно удалена")
+        return redirect(success_url)
 
 
-@login_required
-@require_http_methods(['GET', 'POST'])
-def task_update_view(request, pk):
-    task_obj = get_object_or_404(Task, pk=pk)
-    if request.method == 'POST':
-        form = CustomTaskForm(request.POST, instance=task_obj)
-        if form.is_valid():
-            form.save()
-            messages.success(request, "Задача успешно изменена")
-            return redirect('tasks')
-        else:
-            form = CustomTaskForm()
-            return render(
-                request, 
-                'tasks/update.html', 
-                {'form': form, 'ID': pk}
-                )
-    else:
-        form = CustomTaskForm(instance=task_obj)
-    return render(request, 'tasks/update.html', {'form': form, 'ID': pk})
+class TaskUpdateView(LoginRequiredMixin, UpdateView):
+    model = Task
+    form_class = CustomTaskForm
+    template_name = 'tasks/update.html'
+    success_url = reverse_lazy('tasks')
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['ID'] = self.kwargs['pk']
+        return context
+
+    def form_valid(self, form):
+        messages.success(self.request, "Задача успешно изменена")
+        return super().form_valid(form)

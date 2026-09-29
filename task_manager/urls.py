@@ -18,14 +18,19 @@ from django.contrib import admin
 from django.urls import include, path
 
 from labels import views as labels_views
-from statuses import urls as statuses_urls
 from statuses import views as statuses_views
 from task_manager import views
 from tasks import views as tasks_views
-from users import urls as users_urls
+from users import views as users_views
 
 from .forms import StyledLoginForm
-from .views import CustomLoginView, CustomLogoutView
+from .views import (
+    CustomLoginView,
+    CustomLogoutView,
+    SignUpView,
+    UserDeleteView,
+    UserUpdateView,
+)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -36,50 +41,62 @@ urlpatterns = [
         CustomLoginView.as_view(form_class=StyledLoginForm), 
         name='login'
         ),
-    path('users/create/', views.signup_view, name='signup'),
-    path('users/', include(users_urls), name="users"),
+    path('users/create/', SignUpView.as_view(), name='signup'),
+    path('users/', users_views.UserListView.as_view(), name="users"),
     path('logout/', CustomLogoutView.as_view(), name='logout'),
-    path('users/<int:pk>/delete/', views.delete_view, name='delete'),
-    path('users/<int:pk>/update/', views.update_view, name='update'),
-    path('statuses/', include(statuses_urls), name='statuses'),
+    path('users/<int:pk>/delete/', UserDeleteView.as_view(), name='delete'),
+    path('users/<int:pk>/update/', UserUpdateView.as_view(), name='update'),
+    path(
+        'statuses/', 
+        statuses_views.StatusListView.as_view(), 
+        name='statuses'
+        ),
     path(
         'statuses/create/', 
-        statuses_views.status_create, 
+        statuses_views.StatusCreateView.as_view(), 
         name='status_create'
         ),
     path(
         'statuses/<int:pk>/delete/', 
-        statuses_views.status_delete_view, 
+        statuses_views.StatusDeleteView.as_view(), 
         name='status_delete'
         ),
     path(
         'statuses/<int:pk>/update/', 
-        statuses_views.status_update_view, 
+        statuses_views.StatusUpdateView.as_view(), 
         name='status_update'
         ),
-    path("tasks/", tasks_views.index, name='tasks'),
-    path('tasks/create/', tasks_views.task_create, name='task_create'),
+    path("tasks/", tasks_views.TaskListView.as_view(), name='tasks'),
+    path(
+        'tasks/create/', 
+        tasks_views.TaskCreateView.as_view(), 
+        name='task_create'
+        ),
     path(
         'tasks/<int:pk>/delete/', 
-        tasks_views.task_delete_view, 
+        tasks_views.TaskDeleteView.as_view(), 
         name='task_delete'
         ),
     path(
         'tasks/<int:pk>/update/', 
-        tasks_views.task_update_view, 
+        tasks_views.TaskUpdateView.as_view(), 
         name='task_update'
         ),
     path('tasks/<int:pk>/', tasks_views.task_show_view, name='task_show'),
-    path("labels/", labels_views.index, name='labels'),
-    path('labels/create/', labels_views.label_create, name='label_create'),
+    path("labels/", labels_views.LabelListView.as_view(), name='labels'),
+    path(
+        'labels/create/', 
+        labels_views.LabelCreateView.as_view(), 
+        name='label_create'
+        ),
     path(
         'labels/<int:pk>/delete/', 
-        labels_views.label_delete_view, 
+        labels_views.LabelDeleteView.as_view(), 
         name='label_delete'
         ),
     path(
         'labels/<int:pk>/update/', 
-        labels_views.label_update_view, 
+        labels_views.LabelUpdateView.as_view(), 
         name='label_update'
         ),
 ]

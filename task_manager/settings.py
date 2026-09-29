@@ -29,6 +29,7 @@ sentry_sdk.init(
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'index'  # Redirect target after login
 LOGOUT_REDIRECT_URL = 'login'
 
