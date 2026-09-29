@@ -24,6 +24,8 @@ jobs:
         run: |
           ls -la
       - name: Run test coverage
+        env:
+          SECRET_KEY: 'django-ci-test-key-fake-123'
         run: |
           make test-coverage
       - name: SonarQubeScan
