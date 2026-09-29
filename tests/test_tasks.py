@@ -2,6 +2,7 @@ from django.contrib.auth import get_user_model
 from django.contrib.messages import get_messages
 from django.test import TestCase
 from django.urls import reverse
+
 from labels.models import Label
 from statuses.models import Status
 from tasks.models import Task
@@ -45,7 +46,10 @@ class TaskCrudAndFilterTests(TestCase):
             performer=self.author_user,
         )
         self.task2.labels.add(self.label_feature)
-        self.task1_show_url = reverse('task_show', kwargs={'pk': self.task1.pk})
+        self.task1_show_url = reverse(
+            'task_show', 
+            kwargs={'pk': self.task1.pk}
+            )
         self.task1_edit_url = reverse(
             'task_update', kwargs={'pk': self.task1.pk}
         )
@@ -63,7 +67,10 @@ class TaskCrudAndFilterTests(TestCase):
 
     def test_task_list_filter_by_status(self):
         self.client.login(username='author', password='password123')
-        response = self.client.get(self.tasks_url, {'status': self.status_new.pk})
+        response = self.client.get(
+            self.tasks_url, 
+            {'status': self.status_new.pk}
+            )
         
         self.assertEqual(response.status_code, 200)
         self.assertIn(self.task1, response.context['tasks'])
@@ -71,7 +78,10 @@ class TaskCrudAndFilterTests(TestCase):
 
     def test_task_list_filter_by_label(self):
         self.client.login(username='author', password='password123')
-        response = self.client.get(self.tasks_url, {'label': self.label_bug.pk})
+        response = self.client.get(
+            self.tasks_url, 
+            {'label': self.label_bug.pk}
+            )
         
         self.assertIn(self.task1, response.context['tasks'])
         self.assertNotIn(self.task2, response.context['tasks'])

@@ -5,6 +5,7 @@ from django.urls import reverse
 
 User = get_user_model()
 
+
 class UserAuthAndCrudTests(TestCase):
 
     def setUp(self):

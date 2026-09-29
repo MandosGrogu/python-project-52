@@ -1,8 +1,8 @@
 from django.contrib.auth import get_user_model
 from django.contrib.messages import get_messages
-from django.db.models import ProtectedError
 from django.test import TestCase
 from django.urls import reverse
+
 from statuses.models import Status
 from tasks.models import Task
 
