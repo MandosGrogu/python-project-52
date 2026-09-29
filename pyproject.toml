@@ -33,3 +33,6 @@ dev = [
     "ruff>=0.16.7",
     "sqlite-utils>=4.2.1",
 ]
+
+[tool.coverage.report]
+fail_under = 80
