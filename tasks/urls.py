@@ -32,5 +32,5 @@ urlpatterns = [
         views.TaskUpdateView.as_view(), 
         name='task_update'
         ),
-    path('<int:pk>/', views.TaskDetailView.as_view(), name='task_show'),
+    path('<int:pk>/', views.task_show_view, name='task_show'),
 ]
