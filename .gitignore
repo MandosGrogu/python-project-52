@@ -9,3 +9,6 @@ wheels/
 main.py
 .venv
 *Zone.Identifier
+*.env
+db.sqlite3
+staticfiles/

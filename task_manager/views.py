@@ -5,7 +5,12 @@ from django.contrib.auth.views import LoginView, LogoutView
 from django.contrib.messages.views import SuccessMessageMixin
 from django.shortcuts import redirect, render
 from django.urls import reverse_lazy
-from django.views.generic import CreateView, DeleteView, UpdateView
+from django.views.generic import (
+    CreateView,
+    DeleteView,
+    TemplateView,
+    UpdateView
+)
 
 from .forms import UserCreationForm
 
@@ -21,11 +26,8 @@ class CustomLogoutView(LogoutView):
         return super().post(request, *args, **kwargs)
 
 
-def index(request):
-    return render(
-        request,
-        "index.html",
-    )
+class IndexView(TemplateView):
+    template_name = "index.html"
 
 
 class SignUpView(CreateView):
