@@ -1,10 +1,14 @@
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
-from django.shortcuts import get_object_or_404, redirect, render
+from django.shortcuts import redirect
 from django.urls import reverse_lazy
-from django.views.decorators.http import require_http_methods
-from django.views.generic import CreateView, DeleteView, ListView, UpdateView
+from django.views.generic import (
+    CreateView,
+    DeleteView,
+    DetailView,
+    ListView,
+    UpdateView,
+)
 
 from .forms import CustomTaskForm, TaskFilterForm
 from .models import Task
@@ -69,11 +73,10 @@ class TaskCreateView(LoginRequiredMixin, CreateView):
         return redirect(self.get_success_url())
 
 
-@login_required
-@require_http_methods(['GET'])
-def task_show_view(request, pk):
-    task_obj = get_object_or_404(Task, pk=pk)
-    return render(request, 'tasks/show.html', {'task': task_obj})
+class TaskDetailView(LoginRequiredMixin, DetailView):
+    model = Task
+    template_name = 'tasks/show.html'
+    context_object_name = 'task'
 
 
 class TaskDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):

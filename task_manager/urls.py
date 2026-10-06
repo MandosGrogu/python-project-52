@@ -19,7 +19,6 @@ from django.urls import include, path
 
 from labels import views as labels_views
 from statuses import views as statuses_views
-from task_manager import views
 from tasks import views as tasks_views
 from users import views as users_views
 
@@ -27,6 +26,7 @@ from .forms import StyledLoginForm
 from .views import (
     CustomLoginView,
     CustomLogoutView,
+    IndexView,
     SignUpView,
     UserDeleteView,
     UserUpdateView,
@@ -35,7 +35,7 @@ from .views import (
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('i18n/', include('django.conf.urls.i18n')),
-    path("", views.index, name='index'),
+    path("", IndexView.as_view(), name='index'),
     path(
         'login/', 
         CustomLoginView.as_view(form_class=StyledLoginForm), 
@@ -82,7 +82,11 @@ urlpatterns = [
         tasks_views.TaskUpdateView.as_view(), 
         name='task_update'
         ),
-    path('tasks/<int:pk>/', tasks_views.task_show_view, name='task_show'),
+    path(
+        'tasks/<int:pk>/', 
+        tasks_views.TaskDetailView.as_view(), 
+        name='task_show'
+        ),
     path("labels/", labels_views.LabelListView.as_view(), name='labels'),
     path(
         'labels/create/', 
